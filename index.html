@@ -232,6 +232,10 @@ section { padding:80px 24px; }
 .n-clip:hover { box-shadow:0 4px 18px rgba(25,35,56,0.16); }
 .n-clip img { display:block; width:100%; height:auto; }
 .n-clip-cap { font-size:0.78rem; color:#5A6B8C; margin-top:6px; }
+/* two photos side by side; columns follow the photos' shapes so both end up the same height */
+.n-clips { display:grid; grid-template-columns:2.3fr 1.425fr; gap:10px; max-width:640px; margin-top:12px; align-items:start; }
+.n-clips .n-clip { margin-top:0; max-width:none; }
+@media(max-width:460px){ .n-clips { grid-template-columns:1fr; } }
 
 /* ── GALLERY — light Lavender bg, white cards ── */
 #gallery { background:#E2EAF7; }
@@ -428,6 +432,18 @@ section { padding:80px 24px; }
                alt="The Hindu clipping: Bhuvanesh Patil, Dharwad ZP CEO, addressing students at The Hindu Education Plus Career Counselling 2025 at KLE Technological University, Hubballi; panellists Rajesh Hongal, Satyadhyan Chickerur, S.F. Kammar and Syed Sadat Pasha">
         </a>
         <p class="n-clip-cap">As featured in <em>The Hindu</em> · Bio Tech Hall, KLE Technological University, Hubballi · Photo: Kiran Bakale</p>
+      </div></div>
+      <div class="news-row"><span class="n-date">Oct 2023</span><div class="n-body">
+        <p class="n-text">Mentor — <em>NSM Open Hackathon</em>, IISc Bangalore.</p>
+        <div class="n-clips">
+          <a class="n-clip" href="images/iischack2.jpg" target="_blank" title="Open the full photo">
+            <img src="images/iischack2.jpg" loading="lazy" width="1600" height="695" alt="Participants and mentors of the NSM Open Hackathon at IISc Bangalore, October 2023">
+          </a>
+          <a class="n-clip" href="images/iischack.jpg" target="_blank" title="Open the full photo">
+            <img src="images/iischack.jpg" loading="lazy" width="1600" height="1123" alt="A team presenting at the NSM Open Hackathon, IISc Bangalore, 2023">
+          </a>
+        </div>
+        <p class="n-clip-cap">National Supercomputing Mission (NSM) Open Hackathon · IISc Bangalore · Oct 2023</p>
       </div></div>
       <div class="news-row"><span class="n-date">Jul 2023</span><p class="n-text"><a href="https://drive.google.com/file/d/1YF12ZMLJPa63PzQr59ueShwXDzFAE0CD/view" target="_blank">Speaker — FDP on Chip Design</a>, NIT Calicut × IBM.</p></div>
       <div class="news-row"><span class="n-date">Jun 2023</span><p class="n-text"><a href="https://india.acm.org/education/acm-india-summer-schools-2023" target="_blank">Speaker — ACM India Summer School on HPC &amp; AI Compute Continuum</a>, IIT Palakkad.</p></div>
