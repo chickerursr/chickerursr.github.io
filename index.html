@@ -12,20 +12,17 @@
 ║          HOW TO ADD YOUR PHOTOS — READ FIRST                    ║
 ╠══════════════════════════════════════════════════════════════════╣
 ║                                                                  ║
-║  STEP 1 — Upload your photo to Google Drive                      ║
-║  STEP 2 — Right-click the file → "Share"                        ║
-║           → "Anyone with the link" → Copy link                   ║
+║  EASIEST — put the photo in the images/ folder of this repo      ║
+║  (JPG, about 1600 px wide), then set src="images/NAME.jpg".      ║
 ║                                                                  ║
-║  Your share link looks like:                                     ║
-║  https://drive.google.com/file/d/FILEID/view?usp=sharing        ║
+║  OR — Google Drive: share the file as "Anyone with the link",    ║
+║  copy the FILEID from .../file/d/FILEID/view and use             ║
+║  https://drive.google.com/thumbnail?id=FILEID&sz=w1600           ║
+║  (the old uc?export=view links no longer show on websites)       ║
 ║                                                                  ║
-║  STEP 3 — Convert it to a direct image URL:                      ║
-║  Change it to:                                                   ║
-║  https://drive.google.com/uc?export=view&id=FILEID              ║
-║  (just copy the FILEID part from your link)                      ║
-║                                                                  ║
-║  STEP 4 — Find the photo slot below (labelled with comments)    ║
-║           Paste your URL into src="" replacing ADD_URL_HERE      ║
+║  Find the slot below and replace ADD_URL_HERE in src="".         ║
+║  Empty slots are hidden from visitors; open the page with        ║
+║  ?edit at the end of the address to see all slots.               ║
 ║                                                                  ║
 ║  PHOTO SLOTS IN THIS FILE:                                       ║
 ║  1.  Jensen Huang selfie (GTC 2018)                              ║
@@ -349,7 +346,7 @@ section { padding:80px 24px; }
     <div class="hero-actions">
       <a class="h-btn h-btn-solid" href="https://scholar.google.co.in/citations?user=Obwc7esAAAAJ&hl=en" target="_blank">Google Scholar</a>
       <a class="h-btn h-btn-ghost" href="https://www.techxcelerateinnovations.com" target="_blank">My Startup</a>
-      <a class="h-btn h-btn-ghost" href="/cdn-cgi/l/email-protection#47242f2e242c223532353435072e22222269283520">Contact</a>
+      <a class="h-btn h-btn-ghost" href="mailto:chickerursr@ieee.org">Contact</a>
       <a class="h-btn h-btn-ghost" href="http://linkedin.com/in/chickerursr" target="_blank">LinkedIn</a>
     </div>
   </div>
@@ -366,7 +363,7 @@ section { padding:80px 24px; }
         <p>I am a <strong>Professor at KLE Technological University</strong> and Director of the <strong>Centre for Artificial Intelligence Research</strong>. I am an <strong>NVIDIA DLI Certified Instructor and Ambassador</strong>, bringing cutting-edge GPU programming knowledge to learners across India and beyond.</p>
         <p>My work spans high-performance computing, deep learning, quantum machine learning, and applied AI — from theoretical research to hands-on industry training at IIT Bombay, IIT Palakkad, NIT Calicut, and international venues in China and the USA.</p>
         <p>I am the founder of <a href="https://www.techxcelerateinnovations.com" target="_blank">TechXcelerate Innovations Pvt. Ltd.</a> — an AI-focused startup specialising in healthcare AI, quantum computing, and intelligent product design.</p>
-        <p><a href="/cdn-cgi/l/email-protection#1e7d76777d757b6c6b6c6d6c5e777b7b7b30716c79"><span class="__cf_email__" data-cfemail="94f7fcfdf7fff1e6e1e6e7e6d4fdf1f1f1bafbe6f3">[email&#160;protected]</span></a></p>
+        <p><a href="mailto:chickerursr@ieee.org">chickerursr@ieee.org</a></p>
       </div>
       <div class="aff-panel">
         <h3>Key Affiliations</h3>
@@ -433,7 +430,7 @@ section { padding:80px 24px; }
   <div class="wrap">
     <p class="sec-eyebrow" style="color:#31487A;">04 · Moments</p>
     <h2 class="sec-title" style="color:#192338;">Photo Gallery</h2>
-    <p class="gallery-intro">Snapshots from conferences, hackathons, workshops and research visits around the world. Replace each <code style="font-size:0.7rem;color:#31487A;background:rgba(49,72,122,0.07);padding:2px 6px;border-radius:3px;">src=""</code> with your Google Drive image URL to make photos permanent.</p>
+    <p class="gallery-intro">Snapshots from conferences, hackathons, workshops and research visits around the world.</p>
 
     <!-- ────── NVIDIA GTC 2018 ────── -->
     <div class="g-category">
@@ -447,7 +444,7 @@ section { padding:80px 24px; }
         <!-- PHOTO 1: Jensen Huang selfie -->
         <div class="photo-card medium ">
           <div class="photo-frame">
-            <img src="https://drive.google.com/thumbnail?id=1gvtlbBS9YNMRIK0fnRHuVht9X_8JvK8j"
+            <img src="images/selfie.jpg"
                  alt="Selfie with Jensen Huang NVIDIA CEO GTC 2018">
             <div class="photo-placeholder">
               <div class="ph-icon"></div>
@@ -465,7 +462,7 @@ section { padding:80px 24px; }
           <!-- PHOTO 2: GTC Convention Center -->
           <div class="photo-card">
             <div class="photo-frame">
-              <img src="https://drive.google.com/thumbnail?id=1QMjyrZeyhTe-JMxP-khgo_b8svBooff8"
+              <img src="images/gputechc.jpg"
                    alt="GPU Technology Conference GTC 2018 San Jose Convention Center">
               <div class="photo-placeholder">
                 <div class="ph-icon"></div>
@@ -512,7 +509,7 @@ section { padding:80px 24px; }
         <!-- PHOTO 4: Team Linkers -->
         <div class="photo-card">
           <div class="photo-frame">
-            <img src="https://drive.google.com/thumbnail?id=1MWH7p0LO2B2dbcbLw8ymSXImfzrWCJzZ"
+            <img src="images/chinahack1.jpg"
                  alt="OpenACC Hackathon Shanghai mentoring team Linkers">
             <div class="photo-placeholder">
               <div class="ph-icon"></div>
@@ -530,7 +527,7 @@ section { padding:80px 24px; }
         <!-- PHOTO 6: SJTU campus -->
         <div class="photo-card">
           <div class="photo-frame">
-            <img src="https://drive.google.com/thumbnail?id=13g5cYkEshKVLv3CDY0doOFz3Qf0Odpic"
+            <img src="images/chinahack2.jpg"
                  alt="Shanghai Jiao Tong University campus OpenACC 2018">
             <div class="photo-placeholder">
               <div class="ph-icon"></div>
@@ -593,7 +590,7 @@ section { padding:80px 24px; }
         <!-- PHOTO 9: IISc 2023 a -->
         <div class="photo-card sq">
           <div class="photo-frame">
-            <img src="ADD_URL_HERE"
+            <img src="images/iischack2.jpg"
                  alt="NSM Open Hackathon IISc Bangalore 2023">
             <div class="photo-placeholder">
               <div class="ph-icon">🔬</div>
@@ -610,7 +607,7 @@ section { padding:80px 24px; }
         <!-- PHOTO 10: IISc 2023 b -->
         <div class="photo-card sq">
           <div class="photo-frame">
-            <img src="ADD_URL_HERE"
+            <img src="images/iischack.jpg"
                  alt="NSM Hackathon IISc team presentation 2023">
             <div class="photo-placeholder">
               <div class="ph-icon">🏆</div>
@@ -702,7 +699,7 @@ section { padding:80px 24px; }
         <!-- PHOTO 14: HAL 2025 -->
         <div class="photo-card">
           <div class="photo-frame">
-            <img src="https://drive.google.com/file/d/1ZSNVdBJOLQJbQpHHVjvpVSMVzOMz1YJ_/view?usp=drive_link"
+            <img src="images/HAL.jpg"
                  alt="Digital Twin talk HAL Hindustan Aeronautics Limited Bengaluru 2025">
             <div class="photo-placeholder">
               <div class="ph-icon"></div>
@@ -988,7 +985,7 @@ section { padding:80px 24px; }
   <p class="sec-eyebrow" style="justify-content:center;margin-bottom:10px;color:#31487A;">09 · Contact</p>
   <h2 class="sec-title" style="text-align:center;color:#192338;margin-bottom:0;">Get in Touch</h2>
   <p class="contact-sub" style="margin-top:20px;">For speaking engagements, research collaborations, workshops, or academic inquiries — reach out anytime.</p>
-  <a class="contact-email" href="/cdn-cgi/l/email-protection#8fece7e6ece4eafdfafdfcfdcfe6eaeaeaa1e0fde8">✉ <span class="__cf_email__" data-cfemail="1e7d76777d757b6c6b6c6d6c5e777b7b7b30716c79">[email&#160;protected]</span></a>
+  <a class="contact-email" href="mailto:chickerursr@ieee.org">✉ chickerursr@ieee.org</a>
   <div class="contact-links">
     <a class="c-link" href="http://linkedin.com/in/chickerursr" target="_blank">LinkedIn</a>
     <a class="c-link" href="https://twitter.com/chickerursr" target="_blank">Twitter / X</a>
@@ -996,8 +993,9 @@ section { padding:80px 24px; }
   </div>
 </section>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 /* ── Show placeholder when img src is empty or broken ── */
+const EDIT_MODE = new URLSearchParams(location.search).has('edit');
 document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.photo-frame img, .uk-frame img').forEach(img => {
     const placeholder = img.nextElementSibling;
@@ -1007,6 +1005,19 @@ document.addEventListener('DOMContentLoaded', () => {
       img.style.display = 'none';
       placeholder.style.display = 'flex';
     };
+    // Visitors never see empty slots: a gallery card without a photo is hidden, and a UK
+    // card keeps its text but drops the empty frame. Add ?edit to the URL to see the slots.
+    const missing = () => {
+      if (EDIT_MODE) return showPlaceholder();
+      const ukFrame = img.closest('.uk-frame');
+      if (ukFrame) { ukFrame.style.display = 'none'; return; }
+      const card = img.closest('.photo-card');
+      if (card) card.style.display = 'none';
+      const cat = img.closest('.g-category');
+      if (cat && ![...cat.querySelectorAll('.photo-card')].some(c => c.style.display !== 'none')) {
+        cat.style.display = 'none';
+      }
+    };
     const showImage = () => {
       img.style.display = 'block';
       placeholder.style.display = 'none';
@@ -1015,10 +1026,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // Check if src is empty or still the template placeholder text
     const src = img.getAttribute('src') || '';
     if (!src || src === 'ADD_URL_HERE' || src.trim() === '') {
-      showPlaceholder();
+      missing();
     } else {
-      // Real URL — show image, fall back to placeholder on error
-      img.onerror = showPlaceholder;
+      // Real URL — show image; if it fails to load, treat it as missing
+      img.onerror = missing;
       img.onload  = showImage;
       // If already cached/loaded
       if (img.complete && img.naturalWidth > 0) showImage();
@@ -1027,3 +1038,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+</script>
+</body>
+</html>
