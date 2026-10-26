@@ -232,8 +232,8 @@ section { padding:80px 24px; }
 .n-clip:hover { box-shadow:0 4px 18px rgba(25,35,56,0.16); }
 .n-clip img { display:block; width:100%; height:auto; }
 .n-clip-cap { font-size:0.78rem; color:#5A6B8C; margin-top:6px; }
-/* two photos side by side; columns follow the photos' shapes so both end up the same height */
-.n-clips { display:grid; grid-template-columns:2.3fr 1.425fr; gap:10px; max-width:640px; margin-top:12px; align-items:start; }
+/* two photos side by side; columns follow the photos' shapes (set --cols per item) so both end up the same height */
+.n-clips { display:grid; grid-template-columns:var(--cols, 2.3fr 1.425fr); gap:10px; max-width:640px; margin-top:12px; align-items:start; }
 .n-clips .n-clip { margin-top:0; max-width:none; }
 @media(max-width:460px){ .n-clips { grid-template-columns:1fr; } }
 
@@ -448,6 +448,30 @@ section { padding:80px 24px; }
       <div class="news-row"><span class="n-date">Jul 2023</span><p class="n-text"><a href="https://drive.google.com/file/d/1YF12ZMLJPa63PzQr59ueShwXDzFAE0CD/view" target="_blank">Speaker — FDP on Chip Design</a>, NIT Calicut × IBM.</p></div>
       <div class="news-row"><span class="n-date">Jun 2023</span><p class="n-text"><a href="https://india.acm.org/education/acm-india-summer-schools-2023" target="_blank">Speaker — ACM India Summer School on HPC &amp; AI Compute Continuum</a>, IIT Palakkad.</p></div>
       <div class="news-row"><span class="n-date">May 2023</span><p class="n-text"><a href="https://onlinecourses.nptel.ac.in/noc23_cs104/preview" target="_blank">NPTEL — Applied Accelerated Artificial Intelligence</a>. 12-week course, July–Oct 2023.</p></div>
+      <div class="news-row"><span class="n-date">Mar 2018</span><div class="n-body">
+        <p class="n-text">Attended the <em>GPU Technology Conference (GTC 2018)</em>, San Jose Convention Center, and met NVIDIA CEO Jensen Huang.</p>
+        <div class="n-clips" style="--cols:0.825fr 1.428fr;">
+          <a class="n-clip" href="images/selfie.jpg" target="_blank" title="Open the full photo">
+            <img src="images/selfie.jpg" loading="lazy" width="1160" height="1406" alt="Selfie with NVIDIA CEO Jensen Huang at GTC 2018, San Jose">
+          </a>
+          <a class="n-clip" href="images/gputechc.jpg" target="_blank" title="Open the full photo">
+            <img src="images/gputechc.jpg" loading="lazy" width="1462" height="1024" alt="GPU Technology Conference 2018 at the San Jose McEnery Convention Center">
+          </a>
+        </div>
+        <p class="n-clip-cap">With Jensen Huang · San Jose McEnery Convention Center · GTC 2018</p>
+      </div></div>
+      <div class="news-row"><span class="n-date">2018</span><div class="n-body">
+        <p class="n-text">Mentor — <em>OpenACC Hackathon</em>, Shanghai Jiao Tong University, China. Co-mentored team “Linkers” with Yao Liu (ICT China).</p>
+        <div class="n-clips" style="--cols:1.336fr 1.797fr;">
+          <a class="n-clip" href="images/chinahack1.jpg" target="_blank" title="Open the full photo">
+            <img src="images/chinahack1.jpg" loading="lazy" width="1456" height="1090" alt="Co-mentoring team Linkers at the OpenACC Hackathon, Shanghai 2018">
+          </a>
+          <a class="n-clip" href="images/chinahack2.jpg" target="_blank" title="Open the full photo">
+            <img src="images/chinahack2.jpg" loading="lazy" width="1312" height="730" alt="OpenACC Hackathon participants at Shanghai Jiao Tong University, 2018">
+          </a>
+        </div>
+        <p class="n-clip-cap">Team “Linkers” · Shanghai Jiao Tong University campus · OpenACC Hackathon 2018</p>
+      </div></div>
     </div>
   </div>
 </section>
