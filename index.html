@@ -216,6 +216,19 @@ section { padding:80px 24px; }
 .startup-desc { font-size:1rem; color:#1E2E4F; line-height:1.8; margin-bottom:28px; }
 .startup-link { display:inline-flex; align-items:center; gap:10px; background:#1E2E4F; color:#D9E1F1; font-weight:600; font-size:0.95rem; padding:13px 28px; border-radius:6px; text-decoration:none; transition:background 0.22s; }
 .startup-link:hover { background:#192338; color:#FFFFFF; }
+/* medical device quality services */
+.md-block { margin:4px 0 30px; padding:26px 28px; background:#FFFFFF; border:1.5px solid #8FB3E2; border-radius:8px; }
+.md-title { font-family:'Cormorant Garamond',serif; font-size:1.35rem; font-weight:600; color:#192338; margin-bottom:6px; }
+.md-lead { font-size:0.97rem; color:#1E2E4F; line-height:1.7; margin-bottom:14px; }
+.md-list { margin:0 0 20px 1.1em; padding:0; color:#1E2E4F; font-size:0.95rem; line-height:1.75; }
+.md-certs { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.md-cert { border:1px solid #D0DBEE; border-left:4px solid #31487A; border-radius:6px; padding:14px 16px; background:#F4F7FC; }
+.md-cert-std { font-family:'DM Mono',monospace; font-size:0.78rem; letter-spacing:0.04em; color:#31487A; text-transform:uppercase; }
+.md-cert-name { font-weight:600; color:#192338; margin:4px 0 6px; line-height:1.4; }
+.md-cert-meta { font-size:0.85rem; color:#1E2E4F; line-height:1.6; }
+.md-cert-meta a { color:#31487A; }
+.md-note { font-size:0.82rem; color:#4A5D82; margin-top:14px; line-height:1.6; }
+@media(max-width:560px){ .md-block { padding:20px 18px; } }
 
 /* ── NEWS ── */
 #news { background:#EEF2FA; }
@@ -409,8 +422,32 @@ section { padding:80px 24px; }
           <div class="s-chip">Healthcare Tech</div>
           <div class="s-chip">Quantum Computing</div>
           <div class="s-chip">Product Development</div>
+          <div class="s-chip">Medical Device Quality</div>
         </div>
         <p class="startup-desc">TechXcelerate Innovations bridges cutting-edge academic research with real-world AI product development. Specialising in healthcare AI, quantum computing applications, and intelligent product design, leveraging deep expertise in accelerated computing to build solutions with tangible impact.</p>
+        <div class="md-block" id="medical-devices">
+          <div class="md-title">Medical Device Quality &amp; Audit Services</div>
+          <p class="md-lead">Through TechXcelerate Innovations, Prof. Chickerur, a trained ISO 13485:2016 Internal Auditor, supports medical-device manufacturers and health-tech startups on quality-management and risk-management compliance, with a focus on AI and software-based medical devices.</p>
+          <ul class="md-list">
+            <li>Internal audits of quality management systems against ISO 13485:2016</li>
+            <li>QMS gap assessments and audit-readiness reviews ahead of certification audits</li>
+            <li>Supplier (second-party) audits on behalf of client organisations</li>
+            <li>Risk-management support as per ISO 14971:2019, including for AI/ML-based Software as a Medical Device (SaMD)</li>
+          </ul>
+          <div class="md-certs">
+            <div class="md-cert">
+              <div class="md-cert-std">ISO 13485:2016</div>
+              <div class="md-cert-name">Internal Auditor Program as per ISO 13485:2016</div>
+              <div class="md-cert-meta">NABET (TCB Division), Quality Council of India · 24–25 Aug 2026<br>Cert. No. TCB/QCI/250826/07-002 · <a href="docs/certificates/ISO13485-Internal-Auditor-NABET-QCI.pdf" target="_blank">View certificate</a></div>
+            </div>
+            <div class="md-cert">
+              <div class="md-cert-std">ISO 14971:2019</div>
+              <div class="md-cert-name">Application of Risk Management to Medical Devices</div>
+              <div class="md-cert-meta">NABET (TCB Division), Quality Council of India · 20 Aug 2026<br>Cert. No. TCB/QCI/200826/11-003 · <a href="docs/certificates/ISO14971-Risk-Management-NABET-QCI.pdf" target="_blank">View certificate</a></div>
+            </div>
+          </div>
+          <p class="md-note">Both are certificates of training from NABET's Training and Capacity Building Division, Quality Council of India; each can be verified with the QR code on the certificate.</p>
+        </div>
         <a class="startup-link" href="https://www.techxcelerateinnovations.com" target="_blank">Visit TechXcelerate Innovations →</a>
       </div>
     </div>
@@ -423,6 +460,7 @@ section { padding:80px 24px; }
     <p class="sec-eyebrow">03 · Updates</p>
     <h2 class="sec-title">Latest News</h2>
     <div class="news-rows">
+      <div class="news-row"><span class="n-date">Aug 2026</span><p class="n-text">Completed NABET, Quality Council of India training as an <em>Internal Auditor as per ISO 13485:2016</em> (medical devices quality management) and on <em>Risk Management for Medical Devices as per ISO 14971:2019</em>. <a href="#medical-devices">Medical device audit services via TechXcelerate →</a></p></div>
       <div class="news-row"><span class="n-date">Nov 2025</span><div class="n-body">
         <p class="n-text">UK academic visit — <em>AICON 2025 London</em> (Sakal Educon Series) and visits to the Universities of Oxford, Cambridge, Bath, Bristol and East Anglia, Cardiff Metropolitan University, Imperial College London, Brunel University and City St George's, University of London. Met Prof. Rudy Lapeer, Professor of Computational Biomechanics, at UEA's School of Computing Sciences.</p>
         <div class="n-clips" style="--cols:1fr 1fr;">
