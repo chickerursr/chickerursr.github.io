@@ -267,7 +267,7 @@ section { padding:80px 24px; }
 #uk { background:#EEF2FA; }
 #uk .sec-eyebrow { color:#31487A; }
 .uk-intro { font-size:1rem; color:#31487A; max-width:560px; line-height:1.75; margin-bottom:40px; }
-.uk-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(270px,1fr)); gap:18px; }
+.uk-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(270px,1fr)); gap:18px;  align-items:start; }
 .uk-card { background:#FFFFFF; border:1.5px solid #8FB3E2; border-radius:var(--r); overflow:hidden; box-shadow:var(--sh1); transition:transform 0.22s, box-shadow 0.22s; }
 .uk-card:hover { transform:translateY(-4px); box-shadow:var(--sh2); }
 .uk-body { padding:16px 18px; }
@@ -423,6 +423,18 @@ section { padding:80px 24px; }
     <p class="sec-eyebrow">03 · Updates</p>
     <h2 class="sec-title">Latest News</h2>
     <div class="news-rows">
+      <div class="news-row"><span class="n-date">Nov 2025</span><div class="n-body">
+        <p class="n-text">UK visit — <em>AICON 2025 London</em> (Sakal Educon Series), the University of Bristol and the University of East Anglia, Norwich.</p>
+        <div class="n-clips" style="--cols:1.333fr 0.75fr;">
+          <a class="n-clip" href="images/aicon-london-2025.jpg" target="_blank" title="Open the full photo">
+            <img src="images/aicon-london-2025.jpg" loading="lazy" width="1600" height="1200" alt="Prof. Satyadhyan Chickerur at AICON 2025 London, Sakal Educon Series">
+          </a>
+          <a class="n-clip" href="images/aicon-with-speaker.jpg" target="_blank" title="Open the full photo">
+            <img src="images/aicon-with-speaker.jpg" loading="lazy" width="1200" height="1600" alt="With a speaker at AICON 2025 London">
+          </a>
+        </div>
+        <p class="n-clip-cap">AICON 2025 · London · 6 Nov 2025</p>
+      </div></div>
       <div class="news-row"><span class="n-date">Aug 2025</span><p class="n-text"><a href="https://icrai2025.iaasse.org/sessions.html" target="_blank">ICRAI 2025 — Special Session: Reimagining Healthcare</a>. Deadline: 31 Oct 2025. Springer <em>Lecture Notes in Networks and Systems</em>.</p></div>
       <div class="news-row"><span class="n-date">Sep 2025</span><p class="n-text"><a href="https://www.ic-pqc.com/GeneralChair" target="_blank">ICPQC 2026 — General Chair</a>. International Conference on Physics &amp; Quantum Computing. Deadline: 28 March 2026.</p></div>
       <div class="news-row"><span class="n-date">Apr 2025</span><p class="n-text">Expert Session: <em>Digital Twin — Concepts and Applications in Aerospace</em> at Hindustan Aeronautics Limited (HAL), Bengaluru.</p></div>
@@ -484,6 +496,114 @@ section { padding:80px 24px; }
     <p class="sec-eyebrow" style="color:#31487A;">04 · Moments</p>
     <h2 class="sec-title" style="color:#192338;">Photo Gallery</h2>
     <p class="gallery-intro">Snapshots from conferences, hackathons, workshops and research visits around the world.</p>
+
+    <!-- ────── UK Visit 2025 ────── -->
+    <div class="g-category">
+      <div class="g-cat-label">
+        <span class="g-cat-icon">🇬🇧</span>
+        <span class="g-cat-name">UK Visit · Bristol · London · Norwich · 2025</span>
+        <span class="g-cat-line"></span>
+      </div>
+      <div class="g-grid-3">
+
+        <div class="photo-card">
+          <div class="photo-frame">
+            <img src="images/uk-clifton-bridge.jpg" loading="lazy"
+                 alt="At the Clifton Suspension Bridge, Bristol">
+            <div class="photo-placeholder">
+              <div class="ph-icon"></div>
+              <div class="ph-label"></div>
+              <div class="ph-hint"></div>
+            </div>
+          </div>
+          <div class="photo-meta">
+            <div class="photo-title">Clifton Suspension Bridge</div>
+            <div class="photo-sub">Bristol · Nov 2025</div>
+          </div>
+        </div>
+
+        <div class="photo-card">
+          <div class="photo-frame">
+            <img src="images/aicon-networking.jpg" loading="lazy"
+                 alt="Conversations with delegates at AICON 2025 London">
+            <div class="photo-placeholder">
+              <div class="ph-icon"></div>
+              <div class="ph-label"></div>
+              <div class="ph-hint"></div>
+            </div>
+          </div>
+          <div class="photo-meta">
+            <div class="photo-title">Networking at AICON 2025</div>
+            <div class="photo-sub">London · Nov 2025</div>
+          </div>
+        </div>
+
+        <div class="photo-card">
+          <div class="photo-frame">
+            <img src="images/uk-tower-bridge.jpg" loading="lazy"
+                 alt="At Tower Bridge, London, at night">
+            <div class="photo-placeholder">
+              <div class="ph-icon"></div>
+              <div class="ph-label"></div>
+              <div class="ph-hint"></div>
+            </div>
+          </div>
+          <div class="photo-meta">
+            <div class="photo-title">Tower Bridge</div>
+            <div class="photo-sub">London · Nov 2025</div>
+          </div>
+        </div>
+
+        <div class="photo-card">
+          <div class="photo-frame">
+            <img src="images/uea-sainsbury-centre.jpg" loading="lazy"
+                 alt="At the Sainsbury Centre, University of East Anglia">
+            <div class="photo-placeholder">
+              <div class="ph-icon"></div>
+              <div class="ph-label"></div>
+              <div class="ph-hint"></div>
+            </div>
+          </div>
+          <div class="photo-meta">
+            <div class="photo-title">Sainsbury Centre</div>
+            <div class="photo-sub">University of East Anglia · Nov 2025</div>
+          </div>
+        </div>
+
+        <div class="photo-card">
+          <div class="photo-frame">
+            <img src="images/uea-with-host.jpg" loading="lazy"
+                 alt="With a colleague on the University of East Anglia campus">
+            <div class="photo-placeholder">
+              <div class="ph-icon"></div>
+              <div class="ph-label"></div>
+              <div class="ph-hint"></div>
+            </div>
+          </div>
+          <div class="photo-meta">
+            <div class="photo-title">Campus Visit</div>
+            <div class="photo-sub">University of East Anglia · Nov 2025</div>
+          </div>
+        </div>
+
+        <div class="photo-card">
+          <div class="photo-frame">
+            <img src="images/uea-with-student.jpg" loading="lazy"
+                 alt="With a student at the University of East Anglia">
+            <div class="photo-placeholder">
+              <div class="ph-icon"></div>
+              <div class="ph-label"></div>
+              <div class="ph-hint"></div>
+            </div>
+          </div>
+          <div class="photo-meta">
+            <div class="photo-title">Meeting Students</div>
+            <div class="photo-sub">University of East Anglia · Nov 2025</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
 
     <!-- ────── NVIDIA GTC 2018 ────── -->
     <div class="g-category">
@@ -873,8 +993,43 @@ section { padding:80px 24px; }
   <div class="wrap">
     <p class="sec-eyebrow">05 · International</p>
     <h2 class="sec-title">Visits to UK Universities</h2>
-    <p class="uk-intro">Academic engagement, research exchange and collaborative visits to leading universities across the United Kingdom — Oxford, Cambridge, UCL, University of East Anglia, Imperial and beyond.</p>
+    <p class="uk-intro">Academic engagement, research exchange and collaborative visits to leading universities across the United Kingdom — Oxford, Cambridge, UCL, University of East Anglia, Imperial, Bristol and beyond.</p>
     <div class="uk-grid">
+
+      <!-- PHOTO 22: UEA -->
+      <div class="uk-card">
+        <div class="uk-frame">
+          <img src="images/uea-campus.jpg" loading="lazy"
+               alt="Prof. Satyadhyan Chickerur with a colleague at the University of East Anglia, Norwich">
+          <div class="photo-placeholder">
+            <div class="ph-icon">📸</div>
+            <div class="ph-label">Your UEA photo here</div>
+            <div class="ph-hint">Replace ADD_URL_HERE with your Google Drive URL</div>
+          </div>
+        </div>
+        <div class="uk-body">
+          <div class="uk-name">University of East Anglia</div>
+          <div class="uk-desc">Collaborative visit to UEA's computing &amp; AI research community, Norwich · Nov 2025.</div>
+        </div>
+      </div>
+
+      <!-- PHOTO 24: Bristol -->
+      <div class="uk-card">
+        <div class="uk-frame">
+          <img src="images/uk-bristol-campus.jpg" loading="lazy"
+               alt="Prof. Satyadhyan Chickerur on the University of Bristol campus">
+          <div class="photo-placeholder">
+            <div class="ph-icon">📸</div>
+            <div class="ph-label">Your Bristol photo here</div>
+            <div class="ph-hint">Replace ADD_URL_HERE with your photo</div>
+          </div>
+        </div>
+        <div class="uk-body">
+          <div class="uk-name">University of Bristol</div>
+          <div class="uk-desc">Campus visit to the University of Bristol, home of the AI for Collective Intelligence (AI4CI) hub · Nov 2025.</div>
+        </div>
+      </div>
+
 
       <!-- PHOTO 19: Oxford -->
       <div class="uk-card">
@@ -927,23 +1082,6 @@ section { padding:80px 24px; }
         </div>
       </div>
 
-      <!-- PHOTO 22: UEA -->
-      <div class="uk-card">
-        <div class="uk-frame">
-          <img src="ADD_URL_HERE"
-               alt="University of East Anglia visit Prof Satyadhyan Chickerur">
-          <div class="photo-placeholder">
-            <div class="ph-icon">📸</div>
-            <div class="ph-label">Your UEA photo here</div>
-            <div class="ph-hint">Replace ADD_URL_HERE with your Google Drive URL</div>
-          </div>
-        </div>
-        <div class="uk-body">
-          <div class="uk-name">University of East Anglia</div>
-          <div class="uk-desc">Collaborative visit to UEA's computing &amp; AI research community.</div>
-        </div>
-      </div>
-
       <!-- PHOTO 23: Imperial -->
       <div class="uk-card">
         <div class="uk-frame">
@@ -960,24 +1098,6 @@ section { padding:80px 24px; }
           <div class="uk-desc">Interaction with world-class engineers &amp; technologists.</div>
         </div>
       </div>
-
-      <!-- PHOTO 24: Other UK -->
-      <div class="uk-card">
-        <div class="uk-frame">
-          <img src="ADD_URL_HERE"
-               alt="Other UK university visit Prof Satyadhyan Chickerur">
-          <div class="photo-placeholder">
-            <div class="ph-icon">📸</div>
-            <div class="ph-label">Other UK university visit</div>
-            <div class="ph-hint">Replace ADD_URL_HERE with your Google Drive URL</div>
-          </div>
-        </div>
-        <div class="uk-body">
-          <div class="uk-name">Other UK Institution</div>
-          <div class="uk-desc">Further academic &amp; collaborative engagements across the UK.</div>
-        </div>
-      </div>
-
     </div>
   </div>
 </section>
