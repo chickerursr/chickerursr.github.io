@@ -142,6 +142,8 @@ body {
 .hero-corner.bl { bottom:60px; left:32px; border-bottom:1.5px solid rgba(49,72,122,0.3); border-left:1.5px solid rgba(49,72,122,0.3); }
 .hero-corner.br { bottom:60px; right:32px; border-bottom:1.5px solid rgba(49,72,122,0.3); border-right:1.5px solid rgba(49,72,122,0.3); }
 .hero-inner { position:relative; z-index:1; max-width:820px; width:100%; display:flex; flex-direction:column; align-items:center; animation: riseIn 1s cubic-bezier(.22,.68,0,1.2) both; }
+.hero-photo { width:168px; height:168px; border-radius:50%; object-fit:cover; object-position:50% 30%; border:3px solid #FFFFFF; box-shadow:0 0 0 1.5px #8FB3E2, 0 10px 30px rgba(25,35,56,0.18); margin-bottom:26px; display:block; }
+@media(max-width:560px){ .hero-photo { width:128px; height:128px; margin-bottom:20px; } }
 .hero-eyebrow { display:flex; align-items:center; gap:16px; margin-bottom:28px; }
 .hero-eyebrow-line { flex:1; height:1px; width:60px; background:rgba(49,72,122,0.35); }
 .hero-eyebrow-text { font-family:'DM Mono',monospace; font-size:0.68rem; letter-spacing:0.2em; text-transform:uppercase; color:#31487A; }
@@ -348,6 +350,7 @@ section { padding:80px 24px; }
   <div class="hero-corner tl"></div><div class="hero-corner tr"></div>
   <div class="hero-corner bl"></div><div class="hero-corner br"></div>
   <div class="hero-inner">
+    <img class="hero-photo" src="images/profile.jpg" width="800" height="800" alt="Prof. Satyadhyan Chickerur">
     <div class="hero-eyebrow">
       <span class="hero-eyebrow-line"></span>
       <span class="hero-eyebrow-text">Professor · Researcher · Innovator</span>
@@ -498,7 +501,7 @@ section { padding:80px 24px; }
       </div></div>
       <div class="news-row"><span class="n-date">Jul 2023</span><p class="n-text"><a href="https://drive.google.com/file/d/1YF12ZMLJPa63PzQr59ueShwXDzFAE0CD/view" target="_blank">Speaker — FDP on Chip Design</a>, NIT Calicut × IBM.</p></div>
       <div class="news-row"><span class="n-date">Jun 2023</span><p class="n-text"><a href="https://india.acm.org/education/acm-india-summer-schools-2023" target="_blank">Speaker — ACM India Summer School on HPC &amp; AI Compute Continuum</a>, IIT Palakkad.</p></div>
-      <div class="news-row"><span class="n-date">May 2023</span><p class="n-text"><a href="https://onlinecourses.nptel.ac.in/noc23_cs104/preview" target="_blank">NPTEL — Applied Accelerated Artificial Intelligence</a>. 12-week course, July–Oct 2023.</p></div>
+      <div class="news-row"><span class="n-date">May 2023</span><p class="n-text"><a href="https://nptel.ac.in/courses/106106238" target="_blank">NPTEL — Applied Accelerated Artificial Intelligence</a>. 12-week course, July–Oct 2023.</p></div>
       <div class="news-sub">Earlier highlights</div>
       <div class="news-row"><span class="n-date">Mar 2018</span><div class="n-body">
         <p class="n-text">Attended the <em>GPU Technology Conference (GTC 2018)</em>, San Jose Convention Center, and met NVIDIA CEO Jensen Huang.</p>
@@ -1499,9 +1502,9 @@ section { padding:80px 24px; }
         <div class="pub-body"><div class="pub-name">Performance Characterization &amp; Benchmarking of Parallel Computing</div><div class="pub-sub">Amazon India</div></div>
         <div class="pub-foot">View on Amazon →</div>
       </a>
-      <a class="pub-card" href="https://onlinecourses.nptel.ac.in/noc22_cs83/preview" target="_blank">
+      <a class="pub-card" href="https://nptel.ac.in/courses/106106238" target="_blank">
         <div class="pub-top"><div class="pub-icon">🎓</div><div class="pub-type">NPTEL Course</div></div>
-        <div class="pub-body"><div class="pub-name">Applied Accelerated Artificial Intelligence</div><div class="pub-sub">12-week Swayam NPTEL course</div></div>
+        <div class="pub-body"><div class="pub-name">Applied Accelerated Artificial Intelligence</div><div class="pub-sub">12-week SWAYAM NPTEL course · with IIT Palakkad &amp; NVIDIA</div></div>
         <div class="pub-foot">View Course →</div>
       </a>
       <a class="pub-card" href="https://www.intechopen.com/welcome/6a032cbb3e55886bca2481a2752d6c25?edc=y" target="_blank">
