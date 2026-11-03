@@ -216,6 +216,19 @@ section { padding:80px 24px; }
 .startup-desc { font-size:1rem; color:#1E2E4F; line-height:1.8; margin-bottom:28px; }
 .startup-link { display:inline-flex; align-items:center; gap:10px; background:#1E2E4F; color:#D9E1F1; font-weight:600; font-size:0.95rem; padding:13px 28px; border-radius:6px; text-decoration:none; transition:background 0.22s; }
 .startup-link:hover { background:#192338; color:#FFFFFF; }
+/* medical device quality services */
+.md-block { margin:4px 0 30px; padding:26px 28px; background:#FFFFFF; border:1.5px solid #8FB3E2; border-radius:8px; }
+.md-title { font-family:'Cormorant Garamond',serif; font-size:1.35rem; font-weight:600; color:#192338; margin-bottom:6px; }
+.md-lead { font-size:0.97rem; color:#1E2E4F; line-height:1.7; margin-bottom:14px; }
+.md-list { margin:0 0 20px 1.1em; padding:0; color:#1E2E4F; font-size:0.95rem; line-height:1.75; }
+.md-certs { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.md-cert { border:1px solid #D0DBEE; border-left:4px solid #31487A; border-radius:6px; padding:14px 16px; background:#F4F7FC; }
+.md-cert-std { font-family:'DM Mono',monospace; font-size:0.78rem; letter-spacing:0.04em; color:#31487A; text-transform:uppercase; }
+.md-cert-name { font-weight:600; color:#192338; margin:4px 0 6px; line-height:1.4; }
+.md-cert-meta { font-size:0.85rem; color:#1E2E4F; line-height:1.6; }
+.md-cert-meta a { color:#31487A; }
+.md-note { font-size:0.82rem; color:#4A5D82; margin-top:14px; line-height:1.6; }
+@media(max-width:560px){ .md-block { padding:20px 18px; } }
 
 /* ── NEWS ── */
 #news { background:#EEF2FA; }
@@ -267,7 +280,7 @@ section { padding:80px 24px; }
 #uk { background:#EEF2FA; }
 #uk .sec-eyebrow { color:#31487A; }
 .uk-intro { font-size:1rem; color:#31487A; max-width:560px; line-height:1.75; margin-bottom:40px; }
-.uk-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(270px,1fr)); gap:18px; }
+.uk-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(270px,1fr)); gap:18px;  align-items:start; }
 .uk-card { background:#FFFFFF; border:1.5px solid #8FB3E2; border-radius:var(--r); overflow:hidden; box-shadow:var(--sh1); transition:transform 0.22s, box-shadow 0.22s; }
 .uk-card:hover { transform:translateY(-4px); box-shadow:var(--sh2); }
 .uk-body { padding:16px 18px; }
@@ -409,8 +422,32 @@ section { padding:80px 24px; }
           <div class="s-chip">Healthcare Tech</div>
           <div class="s-chip">Quantum Computing</div>
           <div class="s-chip">Product Development</div>
+          <div class="s-chip">Medical Device Quality</div>
         </div>
         <p class="startup-desc">TechXcelerate Innovations bridges cutting-edge academic research with real-world AI product development. Specialising in healthcare AI, quantum computing applications, and intelligent product design, leveraging deep expertise in accelerated computing to build solutions with tangible impact.</p>
+        <div class="md-block" id="medical-devices">
+          <div class="md-title">Medical Device Quality &amp; Audit Services</div>
+          <p class="md-lead">Through TechXcelerate Innovations, Prof. Chickerur, a trained ISO 13485:2016 Internal Auditor, supports medical-device manufacturers and health-tech startups on quality-management and risk-management compliance, with a focus on AI and software-based medical devices.</p>
+          <ul class="md-list">
+            <li>Internal audits of quality management systems against ISO 13485:2016</li>
+            <li>QMS gap assessments and audit-readiness reviews ahead of certification audits</li>
+            <li>Supplier (second-party) audits on behalf of client organisations</li>
+            <li>Risk-management support as per ISO 14971:2019, including for AI/ML-based Software as a Medical Device (SaMD)</li>
+          </ul>
+          <div class="md-certs">
+            <div class="md-cert">
+              <div class="md-cert-std">ISO 13485:2016</div>
+              <div class="md-cert-name">Internal Auditor Program as per ISO 13485:2016</div>
+              <div class="md-cert-meta">NABET (TCB Division), Quality Council of India · 24–25 Aug 2026<br>Cert. No. TCB/QCI/250826/07-002 · <a href="docs/certificates/ISO13485-Internal-Auditor-NABET-QCI.pdf" target="_blank">View certificate</a></div>
+            </div>
+            <div class="md-cert">
+              <div class="md-cert-std">ISO 14971:2019</div>
+              <div class="md-cert-name">Application of Risk Management to Medical Devices</div>
+              <div class="md-cert-meta">NABET (TCB Division), Quality Council of India · 20 Aug 2026<br>Cert. No. TCB/QCI/200826/11-003 · <a href="docs/certificates/ISO14971-Risk-Management-NABET-QCI.pdf" target="_blank">View certificate</a></div>
+            </div>
+          </div>
+          <p class="md-note">Both are certificates of training from NABET's Training and Capacity Building Division, Quality Council of India; each can be verified with the QR code on the certificate.</p>
+        </div>
         <a class="startup-link" href="https://www.techxcelerateinnovations.com" target="_blank">Visit TechXcelerate Innovations →</a>
       </div>
     </div>
@@ -423,6 +460,19 @@ section { padding:80px 24px; }
     <p class="sec-eyebrow">03 · Updates</p>
     <h2 class="sec-title">Latest News</h2>
     <div class="news-rows">
+      <div class="news-row"><span class="n-date">Aug 2026</span><p class="n-text">Completed NABET, Quality Council of India training as an <em>Internal Auditor as per ISO 13485:2016</em> (medical devices quality management) and on <em>Risk Management for Medical Devices as per ISO 14971:2019</em>. <a href="#medical-devices">Medical device audit services via TechXcelerate →</a></p></div>
+      <div class="news-row"><span class="n-date">Nov 2025</span><div class="n-body">
+        <p class="n-text">UK academic visit — <em>AICON 2025 London</em> (Sakal Educon Series) and visits to the Universities of Oxford, Cambridge, Bath, Bristol and East Anglia, Cardiff Metropolitan University, Imperial College London, Brunel University and City St George's, University of London. Met Prof. Rudy Lapeer, Professor of Computational Biomechanics, at UEA's School of Computing Sciences.</p>
+        <div class="n-clips" style="--cols:1fr 1fr;">
+          <a class="n-clip" href="images/aicon-london-2025.jpg" target="_blank" title="Open the full photo">
+            <img src="images/aicon-london-2025.jpg" loading="lazy" width="1600" height="1200" alt="Prof. Satyadhyan Chickerur at AICON 2025 London, Sakal Educon Series">
+          </a>
+          <a class="n-clip" href="images/uea-rudy-lapeer.jpg" target="_blank" title="Open the full photo">
+            <img src="images/uea-rudy-lapeer.jpg" loading="lazy" width="1600" height="1200" alt="Prof. Satyadhyan Chickerur with Prof. Rudy Lapeer in his office, School of Computing Sciences, University of East Anglia">
+          </a>
+        </div>
+        <p class="n-clip-cap">AICON 2025, London · With Prof. Rudy Lapeer, University of East Anglia · Nov 2025</p>
+      </div></div>
       <div class="news-row"><span class="n-date">Aug 2025</span><p class="n-text"><a href="https://icrai2025.iaasse.org/sessions.html" target="_blank">ICRAI 2025 — Special Session: Reimagining Healthcare</a>. Deadline: 31 Oct 2025. Springer <em>Lecture Notes in Networks and Systems</em>.</p></div>
       <div class="news-row"><span class="n-date">Sep 2025</span><p class="n-text"><a href="https://www.ic-pqc.com/GeneralChair" target="_blank">ICPQC 2026 — General Chair</a>. International Conference on Physics &amp; Quantum Computing. Deadline: 28 March 2026.</p></div>
       <div class="news-row"><span class="n-date">Apr 2025</span><p class="n-text">Expert Session: <em>Digital Twin — Concepts and Applications in Aerospace</em> at Hindustan Aeronautics Limited (HAL), Bengaluru.</p></div>
@@ -484,6 +534,390 @@ section { padding:80px 24px; }
     <p class="sec-eyebrow" style="color:#31487A;">04 · Moments</p>
     <h2 class="sec-title" style="color:#192338;">Photo Gallery</h2>
     <p class="gallery-intro">Snapshots from conferences, hackathons, workshops and research visits around the world.</p>
+
+    <!-- ────── UK Visit 2025 ────── -->
+    <div class="g-category">
+      <div class="g-cat-label">
+        <span class="g-cat-icon">🇬🇧</span>
+        <span class="g-cat-name">UK Academic Visit · Nov 2025</span>
+        <span class="g-cat-line"></span>
+      </div>
+      <div class="g-grid-3">
+
+        <div class="photo-card">
+          <div class="photo-frame">
+            <img src="images/uea-rudy-lapeer.jpg" loading="lazy"
+                 alt="Prof. Satyadhyan Chickerur with Prof. Rudy Lapeer, Professor of Computational Biomechanics, University of East Anglia">
+            <div class="photo-placeholder">
+              <div class="ph-icon"></div>
+              <div class="ph-label"></div>
+              <div class="ph-hint"></div>
+            </div>
+          </div>
+          <div class="photo-meta">
+            <div class="photo-title">With Prof. Rudy Lapeer</div>
+            <div class="photo-sub">UEA Computing Sciences · Nov 2025</div>
+          </div>
+        </div>
+
+        <div class="photo-card">
+          <div class="photo-frame">
+            <img src="images/aicon-london-2025.jpg" loading="lazy"
+                 alt="Prof. Satyadhyan Chickerur at AICON 2025 London">
+            <div class="photo-placeholder">
+              <div class="ph-icon"></div>
+              <div class="ph-label"></div>
+              <div class="ph-hint"></div>
+            </div>
+          </div>
+          <div class="photo-meta">
+            <div class="photo-title">AICON 2025</div>
+            <div class="photo-sub">London · 6 Nov 2025</div>
+          </div>
+        </div>
+
+        <div class="photo-card">
+          <div class="photo-frame">
+            <img src="images/uk-oxford-keble.jpg" loading="lazy"
+                 alt="Prof. Satyadhyan Chickerur at Keble College, University of Oxford">
+            <div class="photo-placeholder">
+              <div class="ph-icon"></div>
+              <div class="ph-label"></div>
+              <div class="ph-hint"></div>
+            </div>
+          </div>
+          <div class="photo-meta">
+            <div class="photo-title">Keble College</div>
+            <div class="photo-sub">University of Oxford · 4 Nov 2025</div>
+          </div>
+        </div>
+
+        <div class="photo-card">
+          <div class="photo-frame">
+            <img src="images/uk-oxford-radcliffe.jpg" loading="lazy"
+                 alt="Prof. Satyadhyan Chickerur at the Radcliffe Camera, University of Oxford">
+            <div class="photo-placeholder">
+              <div class="ph-icon"></div>
+              <div class="ph-label"></div>
+              <div class="ph-hint"></div>
+            </div>
+          </div>
+          <div class="photo-meta">
+            <div class="photo-title">Radcliffe Camera</div>
+            <div class="photo-sub">University of Oxford · 4 Nov 2025</div>
+          </div>
+        </div>
+
+        <div class="photo-card">
+          <div class="photo-frame">
+            <img src="images/uk-imperial.jpg" loading="lazy"
+                 alt="Prof. Satyadhyan Chickerur outside Imperial College London, South Kensington">
+            <div class="photo-placeholder">
+              <div class="ph-icon"></div>
+              <div class="ph-label"></div>
+              <div class="ph-hint"></div>
+            </div>
+          </div>
+          <div class="photo-meta">
+            <div class="photo-title">Imperial College London</div>
+            <div class="photo-sub">South Kensington · 3 Nov 2025</div>
+          </div>
+        </div>
+
+        <div class="photo-card">
+          <div class="photo-frame">
+            <img src="images/uk-bath.jpg" loading="lazy"
+                 alt="Prof. Satyadhyan Chickerur at the Sports Training Village, University of Bath">
+            <div class="photo-placeholder">
+              <div class="ph-icon"></div>
+              <div class="ph-label"></div>
+              <div class="ph-hint"></div>
+            </div>
+          </div>
+          <div class="photo-meta">
+            <div class="photo-title">Sports Training Village</div>
+            <div class="photo-sub">University of Bath · 5 Nov 2025</div>
+          </div>
+        </div>
+
+        <div class="photo-card">
+          <div class="photo-frame">
+            <img src="images/uk-bristol-campus.jpg" loading="lazy"
+                 alt="Prof. Satyadhyan Chickerur on the University of Bristol campus">
+            <div class="photo-placeholder">
+              <div class="ph-icon"></div>
+              <div class="ph-label"></div>
+              <div class="ph-hint"></div>
+            </div>
+          </div>
+          <div class="photo-meta">
+            <div class="photo-title">Bristol Campus</div>
+            <div class="photo-sub">University of Bristol · 5 Nov 2025</div>
+          </div>
+        </div>
+
+        <div class="photo-card">
+          <div class="photo-frame">
+            <img src="images/uea-zuckerman.jpg" loading="lazy"
+                 alt="Prof. Satyadhyan Chickerur at the Zuckerman Institute for Connective Environmental Research, University of East Anglia">
+            <div class="photo-placeholder">
+              <div class="ph-icon"></div>
+              <div class="ph-label"></div>
+              <div class="ph-hint"></div>
+            </div>
+          </div>
+          <div class="photo-meta">
+            <div class="photo-title">Zuckerman Institute</div>
+            <div class="photo-sub">University of East Anglia · 7 Nov 2025</div>
+          </div>
+        </div>
+
+        <div class="photo-card">
+          <div class="photo-frame">
+            <img src="images/uea-sainsbury-gallery.jpg" loading="lazy" style="object-position:50% 55%;"
+                 alt="Prof. Satyadhyan Chickerur in the Sainsbury Centre gallery, University of East Anglia">
+            <div class="photo-placeholder">
+              <div class="ph-icon"></div>
+              <div class="ph-label"></div>
+              <div class="ph-hint"></div>
+            </div>
+          </div>
+          <div class="photo-meta">
+            <div class="photo-title">Sainsbury Centre</div>
+            <div class="photo-sub">University of East Anglia · 7 Nov 2025</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ────── UK Talks 2025 ────── -->
+    <div class="g-category">
+      <div class="g-cat-label">
+        <span class="g-cat-icon">🎤</span>
+        <span class="g-cat-name">Talks &amp; Sessions Attended · UK 2025</span>
+        <span class="g-cat-line"></span>
+      </div>
+      <div class="g-grid-4">
+
+        <div class="photo-card">
+          <div class="photo-frame">
+            <img src="images/talk-aicon-jaokar.jpg" loading="lazy"
+                 alt="Ajit Jaokar, Course Director for AI programmes at the University of Oxford, speaking at AICON 2025 London">
+            <div class="photo-placeholder">
+              <div class="ph-icon"></div>
+              <div class="ph-label"></div>
+              <div class="ph-hint"></div>
+            </div>
+          </div>
+          <div class="photo-meta">
+            <div class="photo-title">Talk by Ajit Jaokar</div>
+            <div class="photo-sub">AICON 2025 · London · 6 Nov 2025</div>
+          </div>
+        </div>
+
+        <div class="photo-card">
+          <div class="photo-frame">
+            <img src="images/talk-aicon-ai4ci.jpg" loading="lazy"
+                 alt="Presentation on AI for Collective Intelligence (AI4CI), the UKRI hub of the universities of Bath, Bristol, Cardiff, Exeter, Glasgow, Ulster and UCL, at AICON 2025 London">
+            <div class="photo-placeholder">
+              <div class="ph-icon"></div>
+              <div class="ph-label"></div>
+              <div class="ph-hint"></div>
+            </div>
+          </div>
+          <div class="photo-meta">
+            <div class="photo-title">AI for Collective Intelligence</div>
+            <div class="photo-sub">AICON 2025 · London · 6 Nov 2025</div>
+          </div>
+        </div>
+
+        <div class="photo-card">
+          <div class="photo-frame">
+            <img src="images/talk-bristol-seminar.jpg" loading="lazy"
+                 alt="Seminar on the five pillars of academic AI activity at the University of Bristol">
+            <div class="photo-placeholder">
+              <div class="ph-icon"></div>
+              <div class="ph-label"></div>
+              <div class="ph-hint"></div>
+            </div>
+          </div>
+          <div class="photo-meta">
+            <div class="photo-title">Academic AI Seminar</div>
+            <div class="photo-sub">University of Bristol · 5 Nov 2025</div>
+          </div>
+        </div>
+
+        <div class="photo-card">
+          <div class="photo-frame">
+            <img src="images/talk-uea-research.jpg" loading="lazy"
+                 alt="Research presentation on robotic imaging to monitor fruit at the University of East Anglia">
+            <div class="photo-placeholder">
+              <div class="ph-icon"></div>
+              <div class="ph-label"></div>
+              <div class="ph-hint"></div>
+            </div>
+          </div>
+          <div class="photo-meta">
+            <div class="photo-title">Research Presentations</div>
+            <div class="photo-sub">University of East Anglia · 7 Nov 2025</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ────── UK Campus Visits 2025 ────── -->
+    <div class="g-category">
+      <div class="g-cat-label">
+        <span class="g-cat-icon">🏛️</span>
+        <span class="g-cat-name">Campus Visits · Oxford &amp; Bristol</span>
+        <span class="g-cat-line"></span>
+      </div>
+      <div class="g-grid-4">
+
+        <div class="photo-card tall">
+          <div class="photo-frame">
+            <img src="images/uk-oxford-museum.jpg" loading="lazy"
+                 alt="Prof. Satyadhyan Chickerur outside the Oxford University Museum of Natural History">
+            <div class="photo-placeholder">
+              <div class="ph-icon"></div>
+              <div class="ph-label"></div>
+              <div class="ph-hint"></div>
+            </div>
+          </div>
+          <div class="photo-meta">
+            <div class="photo-title">Museum of Natural History</div>
+            <div class="photo-sub">University of Oxford · 4 Nov 2025</div>
+          </div>
+        </div>
+
+        <div class="photo-card tall">
+          <div class="photo-frame">
+            <img src="images/uk-oxford-keble-chapel.jpg" loading="lazy"
+                 alt="Keble College Chapel, University of Oxford">
+            <div class="photo-placeholder">
+              <div class="ph-icon"></div>
+              <div class="ph-label"></div>
+              <div class="ph-hint"></div>
+            </div>
+          </div>
+          <div class="photo-meta">
+            <div class="photo-title">Keble College Chapel</div>
+            <div class="photo-sub">University of Oxford · 4 Nov 2025</div>
+          </div>
+        </div>
+
+        <div class="photo-card tall">
+          <div class="photo-frame">
+            <img src="images/uk-bristol-wills.jpg" loading="lazy"
+                 alt="Prof. Satyadhyan Chickerur at the University of Bristol">
+            <div class="photo-placeholder">
+              <div class="ph-icon"></div>
+              <div class="ph-label"></div>
+              <div class="ph-hint"></div>
+            </div>
+          </div>
+          <div class="photo-meta">
+            <div class="photo-title">Bristol Campus</div>
+            <div class="photo-sub">University of Bristol · 5 Nov 2025</div>
+          </div>
+        </div>
+
+        <div class="photo-card tall">
+          <div class="photo-frame">
+            <img src="images/uk-bristol-biomedical.jpg" loading="lazy"
+                 alt="Prof. Satyadhyan Chickerur outside the Biomedical Sciences Building, University of Bristol">
+            <div class="photo-placeholder">
+              <div class="ph-icon"></div>
+              <div class="ph-label"></div>
+              <div class="ph-hint"></div>
+            </div>
+          </div>
+          <div class="photo-meta">
+            <div class="photo-title">Biomedical Sciences</div>
+            <div class="photo-sub">University of Bristol · 5 Nov 2025</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ────── Around the UK 2025 ────── -->
+    <div class="g-category">
+      <div class="g-cat-label">
+        <span class="g-cat-icon">📍</span>
+        <span class="g-cat-name">Around the UK · Nov 2025</span>
+        <span class="g-cat-line"></span>
+      </div>
+      <div class="g-grid-4">
+
+        <div class="photo-card">
+          <div class="photo-frame">
+            <img src="images/around-clifton-bridge.jpg" loading="lazy"
+                 alt="Prof. Satyadhyan Chickerur at the Clifton Suspension Bridge, Bristol, at night">
+            <div class="photo-placeholder">
+              <div class="ph-icon"></div>
+              <div class="ph-label"></div>
+              <div class="ph-hint"></div>
+            </div>
+          </div>
+          <div class="photo-meta">
+            <div class="photo-title">Clifton Suspension Bridge</div>
+            <div class="photo-sub">Bristol · 5 Nov 2025</div>
+          </div>
+        </div>
+
+        <div class="photo-card">
+          <div class="photo-frame">
+            <img src="images/around-tower-bridge.jpg" loading="lazy"
+                 alt="Prof. Satyadhyan Chickerur at Tower Bridge, London">
+            <div class="photo-placeholder">
+              <div class="ph-icon"></div>
+              <div class="ph-label"></div>
+              <div class="ph-hint"></div>
+            </div>
+          </div>
+          <div class="photo-meta">
+            <div class="photo-title">Tower Bridge</div>
+            <div class="photo-sub">London · 6 Nov 2025</div>
+          </div>
+        </div>
+
+        <div class="photo-card">
+          <div class="photo-frame">
+            <img src="images/around-london-eye.jpg" loading="lazy"
+                 alt="Prof. Satyadhyan Chickerur by the Thames with the London Eye">
+            <div class="photo-placeholder">
+              <div class="ph-icon"></div>
+              <div class="ph-label"></div>
+              <div class="ph-hint"></div>
+            </div>
+          </div>
+          <div class="photo-meta">
+            <div class="photo-title">London Eye</div>
+            <div class="photo-sub">London · 6 Nov 2025</div>
+          </div>
+        </div>
+
+        <div class="photo-card">
+          <div class="photo-frame">
+            <img src="images/around-royal-albert-hall.jpg" loading="lazy"
+                 alt="Prof. Satyadhyan Chickerur at the Royal Albert Hall, London">
+            <div class="photo-placeholder">
+              <div class="ph-icon"></div>
+              <div class="ph-label"></div>
+              <div class="ph-hint"></div>
+            </div>
+          </div>
+          <div class="photo-meta">
+            <div class="photo-title">Royal Albert Hall</div>
+            <div class="photo-sub">London · 3 Nov 2025</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
 
     <!-- ────── NVIDIA GTC 2018 ────── -->
     <div class="g-category">
@@ -873,108 +1307,159 @@ section { padding:80px 24px; }
   <div class="wrap">
     <p class="sec-eyebrow">05 · International</p>
     <h2 class="sec-title">Visits to UK Universities</h2>
-    <p class="uk-intro">Academic engagement, research exchange and collaborative visits to leading universities across the United Kingdom — Oxford, Cambridge, UCL, University of East Anglia, Imperial and beyond.</p>
+    <p class="uk-intro">Academic engagement, research exchange and collaborative visits to leading universities across the United Kingdom — Oxford, Cambridge, Imperial, East Anglia, Bristol, Bath, Cardiff Met, Brunel, City St George's and beyond.</p>
     <div class="uk-grid">
 
-      <!-- PHOTO 19: Oxford -->
+      <!-- University of Oxford -->
       <div class="uk-card">
         <div class="uk-frame">
-          <img src="ADD_URL_HERE"
-               alt="University of Oxford visit Prof Satyadhyan Chickerur">
+          <img src="images/uk-oxford-bodleian.jpg" loading="lazy"
+               alt="Prof. Satyadhyan Chickerur in the Old Schools Quadrangle of the Bodleian Library, University of Oxford">
           <div class="photo-placeholder">
             <div class="ph-icon">📸</div>
-            <div class="ph-label">Your Oxford photo here</div>
-            <div class="ph-hint">Replace ADD_URL_HERE with your Google Drive URL</div>
+            <div class="ph-label">Your University of Oxford photo here</div>
+            <div class="ph-hint">Put the photo in images/ and set src="images/NAME.jpg"</div>
           </div>
         </div>
         <div class="uk-body">
           <div class="uk-name">University of Oxford</div>
-          <div class="uk-desc">Visit to one of the world's oldest universities, founded c. 1096.</div>
+          <div class="uk-desc">Visit to one of the world's oldest universities, founded c. 1096 · Bodleian Library, 4 Nov 2025.</div>
         </div>
       </div>
 
-      <!-- PHOTO 20: Cambridge -->
+      <!-- University of Cambridge -->
       <div class="uk-card">
         <div class="uk-frame">
-          <img src="ADD_URL_HERE"
-               alt="University of Cambridge visit Prof Satyadhyan Chickerur">
+          <img src="images/uk-cambridge-college.jpg" loading="lazy" style="object-position:50% 62%;"
+               alt="Prof. Satyadhyan Chickerur in a college court, University of Cambridge">
           <div class="photo-placeholder">
             <div class="ph-icon">📸</div>
-            <div class="ph-label">Your Cambridge photo here</div>
-            <div class="ph-hint">Replace ADD_URL_HERE with your Google Drive URL</div>
+            <div class="ph-label">Your University of Cambridge photo here</div>
+            <div class="ph-hint">Put the photo in images/ and set src="images/NAME.jpg"</div>
           </div>
         </div>
         <div class="uk-body">
           <div class="uk-name">University of Cambridge</div>
-          <div class="uk-desc">Research engagement at this globally renowned centre of science &amp; innovation.</div>
+          <div class="uk-desc">Visit to this globally renowned centre of science &amp; innovation · 4 Nov 2025.</div>
         </div>
       </div>
 
-      <!-- PHOTO 21: UCL -->
+      <!-- Imperial College London -->
       <div class="uk-card">
         <div class="uk-frame">
-          <img src="ADD_URL_HERE"
-               alt="UCL University College London visit Prof Satyadhyan Chickerur">
+          <img src="images/uk-imperial.jpg" loading="lazy"
+               alt="Prof. Satyadhyan Chickerur outside Imperial College London">
           <div class="photo-placeholder">
             <div class="ph-icon">📸</div>
-            <div class="ph-label">Your UCL photo here</div>
-            <div class="ph-hint">Replace ADD_URL_HERE with your Google Drive URL</div>
-          </div>
-        </div>
-        <div class="uk-body">
-          <div class="uk-name">University College London (UCL)</div>
-          <div class="uk-desc">Academic exchange at the UK's leading multidisciplinary research university.</div>
-        </div>
-      </div>
-
-      <!-- PHOTO 22: UEA -->
-      <div class="uk-card">
-        <div class="uk-frame">
-          <img src="ADD_URL_HERE"
-               alt="University of East Anglia visit Prof Satyadhyan Chickerur">
-          <div class="photo-placeholder">
-            <div class="ph-icon">📸</div>
-            <div class="ph-label">Your UEA photo here</div>
-            <div class="ph-hint">Replace ADD_URL_HERE with your Google Drive URL</div>
-          </div>
-        </div>
-        <div class="uk-body">
-          <div class="uk-name">University of East Anglia</div>
-          <div class="uk-desc">Collaborative visit to UEA's computing &amp; AI research community.</div>
-        </div>
-      </div>
-
-      <!-- PHOTO 23: Imperial -->
-      <div class="uk-card">
-        <div class="uk-frame">
-          <img src="ADD_URL_HERE"
-               alt="Imperial College London visit Prof Satyadhyan Chickerur">
-          <div class="photo-placeholder">
-            <div class="ph-icon">📸</div>
-            <div class="ph-label">Your Imperial photo here</div>
-            <div class="ph-hint">Replace ADD_URL_HERE with your Google Drive URL</div>
+            <div class="ph-label">Your Imperial College London photo here</div>
+            <div class="ph-hint">Put the photo in images/ and set src="images/NAME.jpg"</div>
           </div>
         </div>
         <div class="uk-body">
           <div class="uk-name">Imperial College London</div>
-          <div class="uk-desc">Interaction with world-class engineers &amp; technologists.</div>
+          <div class="uk-desc">Visit to the South Kensington campus · 3 Nov 2025.</div>
         </div>
       </div>
 
-      <!-- PHOTO 24: Other UK -->
+      <!-- University of East Anglia -->
       <div class="uk-card">
         <div class="uk-frame">
-          <img src="ADD_URL_HERE"
-               alt="Other UK university visit Prof Satyadhyan Chickerur">
+          <img src="images/uea-sainsbury-centre.jpg" loading="lazy"
+               alt="Prof. Satyadhyan Chickerur at the Sainsbury Centre, University of East Anglia">
           <div class="photo-placeholder">
             <div class="ph-icon">📸</div>
-            <div class="ph-label">Other UK university visit</div>
-            <div class="ph-hint">Replace ADD_URL_HERE with your Google Drive URL</div>
+            <div class="ph-label">Your University of East Anglia photo here</div>
+            <div class="ph-hint">Put the photo in images/ and set src="images/NAME.jpg"</div>
           </div>
         </div>
         <div class="uk-body">
-          <div class="uk-name">Other UK Institution</div>
-          <div class="uk-desc">Further academic &amp; collaborative engagements across the UK.</div>
+          <div class="uk-name">University of East Anglia</div>
+          <div class="uk-desc">School of Computing Sciences, with Prof. Rudy Lapeer · Norwich, 7 Nov 2025.</div>
+        </div>
+      </div>
+
+      <!-- University of Bristol -->
+      <div class="uk-card">
+        <div class="uk-frame">
+          <img src="images/uk-bristol-sign.jpg" loading="lazy"
+               alt="Prof. Satyadhyan Chickerur at the University of Bristol">
+          <div class="photo-placeholder">
+            <div class="ph-icon">📸</div>
+            <div class="ph-label">Your University of Bristol photo here</div>
+            <div class="ph-hint">Put the photo in images/ and set src="images/NAME.jpg"</div>
+          </div>
+        </div>
+        <div class="uk-body">
+          <div class="uk-name">University of Bristol</div>
+          <div class="uk-desc">Campus visit to the University of Bristol, home of the AI for Collective Intelligence (AI4CI) hub · 5 Nov 2025.</div>
+        </div>
+      </div>
+
+      <!-- University of Bath -->
+      <div class="uk-card">
+        <div class="uk-frame">
+          <img src="images/uk-bath.jpg" loading="lazy" style="object-position:50% 0%;"
+               alt="Prof. Satyadhyan Chickerur at the University of Bath">
+          <div class="photo-placeholder">
+            <div class="ph-icon">📸</div>
+            <div class="ph-label">Your University of Bath photo here</div>
+            <div class="ph-hint">Put the photo in images/ and set src="images/NAME.jpg"</div>
+          </div>
+        </div>
+        <div class="uk-body">
+          <div class="uk-name">University of Bath</div>
+          <div class="uk-desc">Visit to the Sports Training Village, University of Bath · 5 Nov 2025.</div>
+        </div>
+      </div>
+
+      <!-- Cardiff Metropolitan University -->
+      <div class="uk-card">
+        <div class="uk-frame">
+          <img src="images/uk-cardiff-met.jpg" loading="lazy"
+               alt="Prof. Satyadhyan Chickerur with colleagues outside Cardiff Metropolitan University">
+          <div class="photo-placeholder">
+            <div class="ph-icon">📸</div>
+            <div class="ph-label">Your Cardiff photo here</div>
+            <div class="ph-hint">Put the photo in images/ and set src="images/NAME.jpg"</div>
+          </div>
+        </div>
+        <div class="uk-body">
+          <div class="uk-name">Cardiff Metropolitan University</div>
+          <div class="uk-desc">Visit to Cardiff Metropolitan University, Wales · 5 Nov 2025.</div>
+        </div>
+      </div>
+
+      <!-- Brunel University London -->
+      <div class="uk-card">
+        <div class="uk-frame">
+          <img src="images/uk-brunel.jpg" loading="lazy" style="object-position:50% 62%;"
+               alt="Prof. Satyadhyan Chickerur with fellow delegates on the Quad at Brunel University London, Uxbridge">
+          <div class="photo-placeholder">
+            <div class="ph-icon">📸</div>
+            <div class="ph-label">Your Brunel University London photo here</div>
+            <div class="ph-hint">Put the photo in images/ and set src="images/NAME.jpg"</div>
+          </div>
+        </div>
+        <div class="uk-body">
+          <div class="uk-name">Brunel University London</div>
+          <div class="uk-desc">Campus visit to the Quad, Uxbridge · 3 Nov 2025.</div>
+        </div>
+      </div>
+
+      <!-- City St George's, University of London -->
+      <div class="uk-card">
+        <div class="uk-frame">
+          <img src="images/uk-city-st-georges.jpg" loading="lazy"
+               alt="Prof. Satyadhyan Chickerur at City St George's, University of London">
+          <div class="photo-placeholder">
+            <div class="ph-icon">📸</div>
+            <div class="ph-label">Your City St George's, University of London photo here</div>
+            <div class="ph-hint">Put the photo in images/ and set src="images/NAME.jpg"</div>
+          </div>
+        </div>
+        <div class="uk-body">
+          <div class="uk-name">City St George's, University of London</div>
+          <div class="uk-desc">Attended a session at City St George's · 3 Nov 2025.</div>
         </div>
       </div>
 
