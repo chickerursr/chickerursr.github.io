@@ -304,6 +304,40 @@ section { padding:80px 24px; }
 @keyframes floatDown { 0%,100% { transform:translateX(-50%) translateY(0); } 50% { transform:translateX(-50%) translateY(8px); } }
 @keyframes fadeUp { from { opacity:0; transform:translateY(20px); } to { opacity:1; transform:translateY(0); } }
 
+
+/* ── COLOUR THEME: navy top banner + alternating white / ivory / soft-blue sections, muted gold accent ── */
+#about { background:#FFFFFF; } #startup { background:#FBF6EC; } #news { background:#EDF3FC; }
+#gallery { background:#FFFFFF; } #uk { background:#FBF6EC; } #talks { background:#EDF3FC; }
+#pubs { background:#FFFFFF; } #profiles { background:#FBF6EC; }
+#contact { background:linear-gradient(150deg,#17294F,#203C73) !important; }
+#contact .sec-title { color:#fff !important; } #contact .sec-title::after { margin:12px auto 0; } #contact .sec-eyebrow { color:#E8C27A !important; }
+#contact p, #contact .c-sub { color:#D3DDF2; }
+section .sec-eyebrow { color:#B07D2B !important; }
+.sec-eyebrow::after { background:#B07D2B; opacity:0.35; }
+.sec-title::after { content:''; display:block; width:44px; height:3px; background:#B07D2B; border-radius:2px; margin-top:12px; }
+.n-date { color:#B07D2B; font-weight:500; }
+.t-badge { color:#B07D2B; border-color:#E3C894; background:#FFF9EE; }
+.s-chip { border-left:3px solid #B07D2B; }
+.g-cat-line { background:linear-gradient(to right,#B07D2B,transparent) !important; opacity:0.5; }
+.photo-card, .uk-card, .pub-card { border-color:#C9D6EC; }
+.photo-card:hover, .uk-card:hover, .pub-card:hover { border-color:#B07D2B; }
+.startup-link { background:#17294F; } .startup-link:hover { background:#B07D2B; }
+.md-cert { border-left-color:#B07D2B; }
+
+.hero { background:#12203F !important; background-image:
+  radial-gradient(ellipse at 78% 8%, rgba(96,140,230,0.40) 0%, transparent 50%),
+  radial-gradient(ellipse at 8% 90%, rgba(255,255,255,0.06) 0%, transparent 45%),
+  linear-gradient(155deg,#0E1A35 0%,#17294F 55%,#203C73 100%) !important; }
+.hero-corner { border-color:rgba(255,255,255,0.22) !important; }
+.hero-photo { border-color:#fff; box-shadow:0 0 0 3px #E8C27A, 0 14px 40px rgba(0,0,0,0.35); }
+.hero-eyebrow-text { color:#AFC3EA; } .hero-eyebrow-line { background:rgba(255,255,255,0.3); }
+.hero-name { color:#FFFFFF; } .hero-role { color:#D3DDF2; } .hero-org { color:#E8C27A; }
+.hero-rule { background:#E8C27A; }
+.pill { background:rgba(255,255,255,0.08); color:#E7EDF9; border-color:rgba(255,255,255,0.25); }
+.h-btn-solid { background:#E8C27A; color:#14213D; } .h-btn-solid:hover { background:#fff; color:#12203F; }
+.h-btn-ghost { color:#fff; border-color:rgba(255,255,255,0.4); background:rgba(255,255,255,0.06); }
+.h-btn-ghost:hover { background:rgba(255,255,255,0.16); color:#fff; border-color:#fff; }
+.scroll-down { color:rgba(255,255,255,0.55); }
 </style>
 </head>
 <body>
