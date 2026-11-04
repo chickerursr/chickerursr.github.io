@@ -350,6 +350,19 @@ section .sec-eyebrow { color:#B07D2B !important; }
 /* brand-coloured profile badges */
 .p-avatar[style*="--b"] { background:var(--b); border-color:var(--b); color:#FFFFFF; font-weight:600; width:38px; height:38px; font-size:0.72rem; letter-spacing:0; }
 .p-card:hover { border-color:#B07D2B; }
+
+/* credential badges in the top banner */
+.hero-creds { display:flex; flex-wrap:wrap; justify-content:center; gap:8px; }
+.cred { font-size:0.82rem; font-weight:500; color:#14213D; background:#E8C27A; padding:5px 14px; border-radius:20px; letter-spacing:0.02em; }
+/* at-a-glance highlights */
+.hl-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; margin-top:22px; }
+.hl { display:flex; align-items:center; gap:10px; background:#FFFFFF; border:1px solid #D7E0F0; border-radius:8px; padding:10px 12px; line-height:1.3; }
+.hl-ic { flex:0 0 auto; width:38px; height:38px; border-radius:50%; background:var(--b); color:#fff; display:flex; align-items:center; justify-content:center; font-family:'DM Mono',monospace; font-size:0.66rem; font-weight:600; }
+.hl-t { display:block; font-size:0.86rem; font-weight:600; color:#192338; }
+.hl-s { display:block; font-size:0.76rem; color:#4A5D82; }
+@media(max-width:460px){ .hl-grid { grid-template-columns:1fr; } }
+/* talk type badges */
+.t-badge[style*="--t"] { color:#FFFFFF !important; background:var(--t) !important; border-color:var(--t) !important; }
 </style>
 </head>
 <body>
@@ -367,7 +380,7 @@ section .sec-eyebrow { color:#B07D2B !important; }
     </div>
     <h1 class="hero-name">Satyadhyan Chickerur</h1>
     <div class="hero-rule"></div>
-    <p class="hero-role">Ph.D. · MBA (Edu. Mgmt.) · SMIEEE · NVIDIA DLI Ambassador</p>
+    <div class="hero-creds"><span class="cred">Ph.D.</span><span class="cred">MBA (Edu. Mgmt.)</span><span class="cred">Senior Member, IEEE</span><span class="cred">NVIDIA DLI Ambassador</span></div>
     <p class="hero-org">Director, Centre for AI Research · KLE Technological University</p>
     <div class="hero-pills">
       <span class="pill">Artificial Intelligence</span>
@@ -400,6 +413,7 @@ section .sec-eyebrow { color:#B07D2B !important; }
         <p>My work spans high-performance computing, deep learning, quantum machine learning, and applied AI — from theoretical research to hands-on industry training at IIT Bombay, IIT Palakkad, NIT Calicut, and international venues in China and the USA.</p>
         <p>I am the founder of <a href="https://www.techxcelerateinnovations.com" target="_blank">TechXcelerate Innovations Pvt. Ltd.</a> — an AI-focused startup specialising in healthcare AI, quantum computing, and intelligent product design.</p>
         <p><a href="mailto:chickerursr@ieee.org">chickerursr@ieee.org</a></p>
+        <div class="hl-grid" aria-label="At a glance"><div class="hl"><span class="hl-ic" style="--b:#76B900;">NV</span><span><span class="hl-t">NVIDIA DLI</span><span class="hl-s">Certified Instructor &amp; Ambassador</span></span></div><div class="hl"><span class="hl-ic" style="--b:#00629B;">IEEE</span><span><span class="hl-t">Senior Member</span><span class="hl-s">IEEE</span></span></div><div class="hl"><span class="hl-ic" style="--b:#B07D2B;">GC</span><span><span class="hl-t">General Chair</span><span class="hl-s">ICPQC 2026</span></span></div><div class="hl"><span class="hl-ic" style="--b:#E8572A;">SIH</span><span><span class="hl-t">Center Head</span><span class="hl-s">Smart India Hackathon 2017–2023</span></span></div><div class="hl"><span class="hl-ic" style="--b:#2F5DA8;">NP</span><span><span class="hl-t">NPTEL Course</span><span class="hl-s">Applied Accelerated AI</span></span></div><div class="hl"><span class="hl-ic" style="--b:#138482;">ISO</span><span><span class="hl-t">ISO 13485:2016</span><span class="hl-s">Trained Internal Auditor</span></span></div></div>
       </div>
       <div class="aff-panel">
         <h3>Key Affiliations</h3>
@@ -1236,20 +1250,20 @@ section .sec-eyebrow { color:#B07D2B !important; }
     <p class="sec-eyebrow">06 · Talks &amp; Events</p>
     <h2 class="sec-title">Invited Talks &amp; Appearances</h2>
     <div class="talks-list">
-      <div class="t-card"><span class="t-badge">Startup Talk · 2026</span><div class="t-title">Sustainable AI and Digital Healthcare Technologies for Future Hospitals</div><div class="t-venue">IEEE Bangalore MedTech Conclave 2026 · Deep Tech Session 2 · KLE Technological University, Hubballi · 14 Oct 2026</div></div>
-      <div class="t-card"><span class="t-badge">Workshop · 2026</span><div class="t-title">Artificial Intelligence &amp; Emerging Technologies for MBBS Students</div><div class="t-venue">JIGYASA 2026, National Conclave of IMA Medical Students' Network · KAHER's J N Medical College, Belagavi · 10 Oct 2026</div></div>
-      <div class="t-card"><span class="t-badge">Workshop · 2026</span><div class="t-title">Talking to AI: Practical Prompt Engineering for Clinicians</div><div class="t-venue">AROKSCON 2026 National Radiology Conference · KLE Centenary Convention Centre, JNMC Campus, Belagavi · 16 May 2026</div></div>
-      <div class="t-card"><span class="t-badge">Keynote · 2025</span><div class="t-title">Digital Twin: Concepts &amp; Applications in Aerospace</div><div class="t-venue">HAL Bengaluru · Apr 2025</div></div>
-      <div class="t-card"><span class="t-badge">Panelist · 2025</span><div class="t-title">The Hindu Education Plus Career Counselling</div><div class="t-venue">Career Pathways in Technology</div></div>
-      <div class="t-card"><span class="t-badge">Talk · 2023</span><div class="t-title">Generative AI</div><div class="t-venue">DevFest 2023 — GDG Hubli &amp; Deshpande Startups</div></div>
-      <div class="t-card"><span class="t-badge">Speaker · 2023</span><div class="t-title">HPC and AI Compute Continuum</div><div class="t-venue">ACM India Summer School · IIT Palakkad</div></div>
-      <div class="t-card"><span class="t-badge">Speaker · 2023</span><div class="t-title">Chip Design — FDP</div><div class="t-venue">NIT Calicut × IBM</div></div>
-      <div class="t-card"><span class="t-badge">Talk · 2023</span><div class="t-title">TensorFlow &amp; TensorFlow Lite</div><div class="t-venue">IWD 2023 — GDG Hubli</div></div>
-      <div class="t-card"><span class="t-badge">Mentor · 2023</span><div class="t-title">NSM Open Hackathon</div><div class="t-venue">IISc Bangalore · Oct 2023</div></div>
-      <div class="t-card"><span class="t-badge">Mentor · 2022</span><div class="t-title">NSM Hackathon</div><div class="t-venue">IIT Bombay · Sep 2022</div></div>
-      <div class="t-card"><span class="t-badge">Workshop · 2023</span><div class="t-title">Quantum Machine Learning</div><div class="t-venue">Dayanand Sagar University</div></div>
-      <div class="t-card"><span class="t-badge">Conference · 2018</span><div class="t-title">GPU Technology Conference GTC 2018</div><div class="t-venue">San Jose Convention Center · Met Jensen Huang</div></div>
-      <div class="t-card"><span class="t-badge">Mentor · 2018</span><div class="t-title">OpenACC Hackathon</div><div class="t-venue">Shanghai Jiao Tong University, China</div></div>
+      <div class="t-card"><span class="t-badge" style="--t:#138482;">Startup Talk · 2026</span><div class="t-title">Sustainable AI and Digital Healthcare Technologies for Future Hospitals</div><div class="t-venue">IEEE Bangalore MedTech Conclave 2026 · Deep Tech Session 2 · KLE Technological University, Hubballi · 14 Oct 2026</div></div>
+      <div class="t-card"><span class="t-badge" style="--t:#2C7D4F;">Workshop · 2026</span><div class="t-title">Artificial Intelligence &amp; Emerging Technologies for MBBS Students</div><div class="t-venue">JIGYASA 2026, National Conclave of IMA Medical Students' Network · KAHER's J N Medical College, Belagavi · 10 Oct 2026</div></div>
+      <div class="t-card"><span class="t-badge" style="--t:#2C7D4F;">Workshop · 2026</span><div class="t-title">Talking to AI: Practical Prompt Engineering for Clinicians</div><div class="t-venue">AROKSCON 2026 National Radiology Conference · KLE Centenary Convention Centre, JNMC Campus, Belagavi · 16 May 2026</div></div>
+      <div class="t-card"><span class="t-badge" style="--t:#B03A48;">Keynote · 2025</span><div class="t-title">Digital Twin: Concepts &amp; Applications in Aerospace</div><div class="t-venue">HAL Bengaluru · Apr 2025</div></div>
+      <div class="t-card"><span class="t-badge" style="--t:#B86A00;">Panelist · 2025</span><div class="t-title">The Hindu Education Plus Career Counselling</div><div class="t-venue">Career Pathways in Technology</div></div>
+      <div class="t-card"><span class="t-badge" style="--t:#5E44A6;">Talk · 2023</span><div class="t-title">Generative AI</div><div class="t-venue">DevFest 2023 — GDG Hubli &amp; Deshpande Startups</div></div>
+      <div class="t-card"><span class="t-badge" style="--t:#2F5DA8;">Speaker · 2023</span><div class="t-title">HPC and AI Compute Continuum</div><div class="t-venue">ACM India Summer School · IIT Palakkad</div></div>
+      <div class="t-card"><span class="t-badge" style="--t:#2F5DA8;">Speaker · 2023</span><div class="t-title">Chip Design — FDP</div><div class="t-venue">NIT Calicut × IBM</div></div>
+      <div class="t-card"><span class="t-badge" style="--t:#5E44A6;">Talk · 2023</span><div class="t-title">TensorFlow &amp; TensorFlow Lite</div><div class="t-venue">IWD 2023 — GDG Hubli</div></div>
+      <div class="t-card"><span class="t-badge" style="--t:#0E7C9B;">Mentor · 2023</span><div class="t-title">NSM Open Hackathon</div><div class="t-venue">IISc Bangalore · Oct 2023</div></div>
+      <div class="t-card"><span class="t-badge" style="--t:#0E7C9B;">Mentor · 2022</span><div class="t-title">NSM Hackathon</div><div class="t-venue">IIT Bombay · Sep 2022</div></div>
+      <div class="t-card"><span class="t-badge" style="--t:#2C7D4F;">Workshop · 2023</span><div class="t-title">Quantum Machine Learning</div><div class="t-venue">Dayanand Sagar University</div></div>
+      <div class="t-card"><span class="t-badge" style="--t:#4A5D82;">Conference · 2018</span><div class="t-title">GPU Technology Conference GTC 2018</div><div class="t-venue">San Jose Convention Center · Met Jensen Huang</div></div>
+      <div class="t-card"><span class="t-badge" style="--t:#0E7C9B;">Mentor · 2018</span><div class="t-title">OpenACC Hackathon</div><div class="t-venue">Shanghai Jiao Tong University, China</div></div>
     </div>
   </div>
 </section>
