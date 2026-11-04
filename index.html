@@ -338,6 +338,14 @@ section .sec-eyebrow { color:#B07D2B !important; }
 .h-btn-ghost { color:#fff; border-color:rgba(255,255,255,0.4); background:rgba(255,255,255,0.06); }
 .h-btn-ghost:hover { background:rgba(255,255,255,0.16); color:#fff; border-color:#fff; }
 .scroll-down { color:rgba(255,255,255,0.55); }
+
+/* news thumbnails: one standard size; click opens the full photo */
+.n-thumbs { display:flex; flex-wrap:wrap; gap:8px; margin-top:10px; }
+.n-thumb { display:block; width:150px; height:100px; border-radius:6px; overflow:hidden; border:1px solid #C9D6EC; background:#fff; box-shadow:0 1px 6px rgba(25,35,56,0.08); transition:box-shadow .2s, border-color .2s; }
+.n-thumb:hover { border-color:#B07D2B; box-shadow:0 4px 14px rgba(25,35,56,0.16); }
+.n-thumb img { width:100%; height:100%; object-fit:cover; display:block; }
+.n-thumb-cap { font-size:0.8rem; color:#4A5D82; margin-top:6px; }
+@media(max-width:460px){ .n-thumb { width:calc(50% - 4px); height:96px; } }
 </style>
 </head>
 <body>
@@ -459,29 +467,26 @@ section .sec-eyebrow { color:#B07D2B !important; }
     <p class="sec-eyebrow">03 · Updates</p>
     <h2 class="sec-title">Latest News</h2>
     <div class="news-rows">
-      <div class="news-row"><span class="n-date">Oct 2026</span><p class="n-text">Startup Talk, Deep Tech Session 2 — <em>Sustainable AI and Digital Healthcare Technologies for Future Hospitals</em> at the <a href="https://medtech.ieeebangalore.org/" target="_blank">IEEE Bangalore MedTech Conclave 2026</a>, IEEE Bangalore Section's flagship event, KLE Technological University, Hubballi (14 October 2026). Spoke on behalf of TechXcelerate Innovations and CTIE, KLE Tech. <a href="#gallery">Photos →</a></p></div>
-      <div class="news-row"><span class="n-date">Oct 2026</span><p class="n-text">Hands-on workshop — <em>Artificial Intelligence &amp; Emerging Technologies for MBBS Students</em> at JIGYASA 2026, National Conclave of IMA Medical Students' Network, KAHER's J N Medical College, Belagavi (10 October 2026). <a href="#gallery">Photos →</a></p></div>
+      <div class="news-row"><span class="n-date">Oct 2026</span><div class="n-body"><p class="n-text">Startup Talk, Deep Tech Session 2 — <em>Sustainable AI and Digital Healthcare Technologies for Future Hospitals</em> at the <a href="https://medtech.ieeebangalore.org/" target="_blank">IEEE Bangalore MedTech Conclave 2026</a>, IEEE Bangalore Section's flagship event, KLE Technological University, Hubballi (14 October 2026). Spoke on behalf of TechXcelerate Innovations and CTIE, KLE Tech.</p><div class="n-thumbs"><a class="n-thumb" href="images/medtech-talk.jpg" target="_blank" title="Open the full photo"><img src="images/medtech-talk.jpg" loading="lazy" alt="Talk at the IEEE Bangalore MedTech Conclave 2026" style="object-position:50% 45%;"></a><a class="n-thumb" href="images/medtech-ai-vendor.jpg" target="_blank" title="Open the full photo"><img src="images/medtech-ai-vendor.jpg" loading="lazy" alt="Ask every AI vendor slide, MedTech Conclave 2026" style="object-position:50% 45%;"></a></div></div></div>
+      <div class="news-row"><span class="n-date">Oct 2026</span><div class="n-body"><p class="n-text">Hands-on workshop — <em>Artificial Intelligence &amp; Emerging Technologies for MBBS Students</em> at JIGYASA 2026, National Conclave of IMA Medical Students' Network, KAHER's J N Medical College, Belagavi (10 October 2026).</p><div class="n-thumbs"><a class="n-thumb" href="images/jigyasa-workshop.jpg" target="_blank" title="Open the full photo"><img src="images/jigyasa-workshop.jpg" loading="lazy" alt="Hands-on AI workshop for MBBS students, JIGYASA 2026"></a><a class="n-thumb" href="images/jigyasa-felicitation.jpg" target="_blank" title="Open the full photo"><img src="images/jigyasa-felicitation.jpg" loading="lazy" alt="Felicitation at JIGYASA 2026"></a></div></div></div>
       <div class="news-row"><span class="n-date">Aug 2026</span><p class="n-text">Completed NABET, Quality Council of India training as an <em>Internal Auditor as per ISO 13485:2016</em> (medical devices quality management) and on <em>Risk Management for Medical Devices as per ISO 14971:2019</em>. <a href="#medical-devices">Medical device audit services via TechXcelerate →</a></p></div>
-      <div class="news-row"><span class="n-date">May 2026</span><p class="n-text">AI Workshop — <em>Talking to AI: Practical Prompt Engineering for Clinicians</em> at AROKSCON 2026 National Radiology Conference, KLE Centenary Convention Centre, JNMC Campus, Belagavi (16 May 2026). <a href="#gallery">Photos →</a></p></div>
-      <div class="news-row"><span class="n-date">Nov 2025</span><p class="n-text">UK academic visit — <em>AICON 2025 London</em> (Sakal Educon Series) and visits to the Universities of Oxford, Cambridge, Bath, Bristol and East Anglia, Cardiff Metropolitan University, Imperial College London, Brunel University and City St George's, University of London. Met Prof. Rudy Lapeer, Professor of Computational Biomechanics, at UEA's School of Computing Sciences. <a href="#gallery">Photos →</a></p></div>
+      <div class="news-row"><span class="n-date">May 2026</span><div class="n-body"><p class="n-text">AI Workshop — <em>Talking to AI: Practical Prompt Engineering for Clinicians</em> at AROKSCON 2026 National Radiology Conference, KLE Centenary Convention Centre, JNMC Campus, Belagavi (16 May 2026).</p><div class="n-thumbs"><a class="n-thumb" href="images/arokscon-talk.jpg" target="_blank" title="Open the full photo"><img src="images/arokscon-talk.jpg" loading="lazy" alt="AI workshop at AROKSCON 2026"></a><a class="n-thumb" href="images/arokscon-panel.jpg" target="_blank" title="Open the full photo"><img src="images/arokscon-panel.jpg" loading="lazy" alt="Panel at AROKSCON 2026"></a></div></div></div>
+      <div class="news-row"><span class="n-date">Nov 2025</span><div class="n-body"><p class="n-text">UK academic visit — <em>AICON 2025 London</em> (Sakal Educon Series) and visits to the Universities of Oxford, Cambridge, Bath, Bristol and East Anglia, Cardiff Metropolitan University, Imperial College London, Brunel University and City St George's, University of London. Met Prof. Rudy Lapeer, Professor of Computational Biomechanics, at UEA's School of Computing Sciences.</p><div class="n-thumbs"><a class="n-thumb" href="images/aicon-london-2025.jpg" target="_blank" title="Open the full photo"><img src="images/aicon-london-2025.jpg" loading="lazy" alt="At AICON 2025 London"></a><a class="n-thumb" href="images/uea-rudy-lapeer.jpg" target="_blank" title="Open the full photo"><img src="images/uea-rudy-lapeer.jpg" loading="lazy" alt="With Prof. Rudy Lapeer, UEA"></a></div></div></div>
       <div class="news-row"><span class="n-date">Aug 2025</span><p class="n-text"><a href="https://icrai2025.iaasse.org/sessions.html" target="_blank">ICRAI 2025 — Special Session: Reimagining Healthcare</a>. Deadline: 31 Oct 2025. Springer <em>Lecture Notes in Networks and Systems</em>.</p></div>
       <div class="news-row"><span class="n-date">Sep 2025</span><p class="n-text"><a href="https://www.ic-pqc.com/GeneralChair" target="_blank">ICPQC 2026 — General Chair</a>. International Conference on Physics &amp; Quantum Computing. Deadline: 28 March 2026.</p></div>
       <div class="news-row"><span class="n-date">Apr 2025</span><p class="n-text">Expert Session: <em>Digital Twin — Concepts and Applications in Aerospace</em> at Hindustan Aeronautics Limited (HAL), Bengaluru.</p></div>
       <div class="news-row"><span class="n-date">Apr 2025</span><div class="n-body">
         <p class="n-text"><a href="https://www.thehindu.com/news/national/karnataka/passion-hard-work-skills-needed-to-be-successful-bhuvanesh-patil/article69494544.ece" target="_blank">Panelist — The Hindu Education Plus Career Counselling 2025</a>.</p>
-        <a class="n-clip" href="images/Hindu.jpg" target="_blank" title="Open the full clipping">
-          <img src="images/Hindu.jpg" loading="lazy" width="1600" height="1017"
-               alt="The Hindu clipping: Bhuvanesh Patil, Dharwad ZP CEO, addressing students at The Hindu Education Plus Career Counselling 2025 at KLE Technological University, Hubballi; panellists Rajesh Hongal, Satyadhyan Chickerur, S.F. Kammar and Syed Sadat Pasha">
-        </a>
-        <p class="n-clip-cap">As featured in <em>The Hindu</em> · Bio Tech Hall, KLE Technological University, Hubballi · Photo: Kiran Bakale</p>
+        <div class="n-thumbs"><a class="n-thumb" href="images/Hindu.jpg" target="_blank" title="Open the full photo"><img src="images/Hindu.jpg" loading="lazy" alt="The Hindu clipping: panellists Rajesh Hongal, Satyadhyan Chickerur, S.F. Kammar and Syed Sadat Pasha at The Hindu Education Plus Career Counselling 2025, KLE Technological University, Hubballi" style="object-position:72% 40%;"></a></div>
+        <p class="n-thumb-cap">As featured in <em>The Hindu</em> · Photo: Kiran Bakale · click to open the clipping</p>
       </div></div>
-      <div class="news-row"><span class="n-date">Oct 2023</span><p class="n-text">Mentor — <em>NSM Open Hackathon</em>, IISc Bangalore. <a href="#gallery">Photos →</a></p></div>
+      <div class="news-row"><span class="n-date">Oct 2023</span><div class="n-body"><p class="n-text">Mentor — <em>NSM Open Hackathon</em>, IISc Bangalore.</p><div class="n-thumbs"><a class="n-thumb" href="images/iischack2.jpg" target="_blank" title="Open the full photo"><img src="images/iischack2.jpg" loading="lazy" alt="NSM Open Hackathon, IISc Bangalore"></a><a class="n-thumb" href="images/iischack.jpg" target="_blank" title="Open the full photo"><img src="images/iischack.jpg" loading="lazy" alt="Team presenting, NSM Hackathon"></a></div></div></div>
       <div class="news-row"><span class="n-date">Jul 2023</span><p class="n-text"><a href="https://drive.google.com/file/d/1YF12ZMLJPa63PzQr59ueShwXDzFAE0CD/view" target="_blank">Speaker — FDP on Chip Design</a>, NIT Calicut × IBM.</p></div>
       <div class="news-row"><span class="n-date">Jun 2023</span><p class="n-text"><a href="https://india.acm.org/education/acm-india-summer-schools-2023" target="_blank">Speaker — ACM India Summer School on HPC &amp; AI Compute Continuum</a>, IIT Palakkad.</p></div>
       <div class="news-row"><span class="n-date">May 2023</span><p class="n-text"><a href="https://nptel.ac.in/courses/106106238" target="_blank">NPTEL — Applied Accelerated Artificial Intelligence</a>. 12-week course, July–Oct 2023.</p></div>
       <div class="news-sub">Earlier highlights</div>
-      <div class="news-row"><span class="n-date">Mar 2018</span><p class="n-text">Attended the <em>GPU Technology Conference (GTC 2018)</em>, San Jose Convention Center, and met NVIDIA CEO Jensen Huang. <a href="#gallery">Photos →</a></p></div>
-      <div class="news-row"><span class="n-date">2018</span><p class="n-text">Mentor — <em>OpenACC Hackathon</em>, Shanghai Jiao Tong University, China. Co-mentored team “Linkers” with Yao Liu (ICT China). <a href="#gallery">Photos →</a></p></div>
+      <div class="news-row"><span class="n-date">Mar 2018</span><div class="n-body"><p class="n-text">Attended the <em>GPU Technology Conference (GTC 2018)</em>, San Jose Convention Center, and met NVIDIA CEO Jensen Huang.</p><div class="n-thumbs"><a class="n-thumb" href="images/selfie.jpg" target="_blank" title="Open the full photo"><img src="images/selfie.jpg" loading="lazy" alt="With Jensen Huang at GTC 2018" style="object-position:50% 25%;"></a><a class="n-thumb" href="images/gputechc.jpg" target="_blank" title="Open the full photo"><img src="images/gputechc.jpg" loading="lazy" alt="GTC 2018, San Jose"></a></div></div></div>
+      <div class="news-row"><span class="n-date">2018</span><div class="n-body"><p class="n-text">Mentor — <em>OpenACC Hackathon</em>, Shanghai Jiao Tong University, China. Co-mentored team “Linkers” with Yao Liu (ICT China).</p><div class="n-thumbs"><a class="n-thumb" href="images/chinahack1.jpg" target="_blank" title="Open the full photo"><img src="images/chinahack1.jpg" loading="lazy" alt="Team Linkers, OpenACC Hackathon 2018"></a><a class="n-thumb" href="images/chinahack2.jpg" target="_blank" title="Open the full photo"><img src="images/chinahack2.jpg" loading="lazy" alt="OpenACC Hackathon, Shanghai Jiao Tong University"></a></div></div></div>
     </div>
   </div>
 </section>
@@ -535,8 +540,8 @@ section .sec-eyebrow { color:#B07D2B !important; }
 
         <div class="photo-card">
           <div class="photo-frame">
-            <img src="images/medtech-ai-standards.jpg" loading="lazy" style="object-position:50% 40%;"
-                 alt="Prof. Satyadhyan Chickerur presenting the new AI standards: ISO/IEC 42001, ISO/IEC 23894, ISO 24291 and IEC 62304 Ed. 2">
+            <img src="images/medtech-ai-vendor.jpg" loading="lazy" style="object-position:50% 40%;"
+                 alt="Prof. Satyadhyan Chickerur presenting six questions hospitals should ask every AI vendor">
             <div class="photo-placeholder">
               <div class="ph-icon"></div>
               <div class="ph-label"></div>
@@ -544,7 +549,7 @@ section .sec-eyebrow { color:#B07D2B !important; }
             </div>
           </div>
           <div class="photo-meta">
-            <div class="photo-title">The New AI Standards</div>
+            <div class="photo-title">Ask Every AI Vendor</div>
             <div class="photo-sub">IEEE MedTech Conclave · Hubballi</div>
           </div>
         </div>
