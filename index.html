@@ -346,6 +346,10 @@ section .sec-eyebrow { color:#B07D2B !important; }
 .n-thumb img { width:100%; height:100%; object-fit:cover; display:block; }
 .n-thumb-cap { font-size:0.8rem; color:#4A5D82; margin-top:6px; }
 @media(max-width:460px){ .n-thumb { width:calc(50% - 4px); height:96px; } }
+
+/* brand-coloured profile badges */
+.p-avatar[style*="--b"] { background:var(--b); border-color:var(--b); color:#FFFFFF; font-weight:600; width:38px; height:38px; font-size:0.72rem; letter-spacing:0; }
+.p-card:hover { border-color:#B07D2B; }
 </style>
 </head>
 <body>
@@ -375,6 +379,8 @@ section .sec-eyebrow { color:#B07D2B !important; }
     </div>
     <div class="hero-actions">
       <a class="h-btn h-btn-solid" href="https://scholar.google.co.in/citations?user=Obwc7esAAAAJ&hl=en" target="_blank">Google Scholar</a>
+      <a class="h-btn h-btn-ghost" href="https://www.scopus.com/authid/detail.uri?authorId=24824178200" target="_blank">Scopus</a>
+      <a class="h-btn h-btn-ghost" href="https://www.webofscience.com/wos/author/record/32966" target="_blank">Web of Science</a>
       <a class="h-btn h-btn-ghost" href="https://www.techxcelerateinnovations.com" target="_blank">My Startup</a>
       <a class="h-btn h-btn-ghost" href="mailto:chickerursr@ieee.org">Contact</a>
       <a class="h-btn h-btn-ghost" href="http://linkedin.com/in/chickerursr" target="_blank">LinkedIn</a>
@@ -1284,13 +1290,13 @@ section .sec-eyebrow { color:#B07D2B !important; }
     <p class="sec-eyebrow">08 · Online Presence</p>
     <h2 class="sec-title">Find Me Online</h2>
     <div class="p-grid">
-      <a class="p-card" href="https://scholar.google.co.in/citations?user=Obwc7esAAAAJ&hl=en" target="_blank"><div class="p-avatar">GS</div><div><div class="p-label">Google Scholar</div><div class="p-hint">Citations &amp; h-index</div></div></a>
-      <a class="p-card" href="https://www.scopus.com/authid/detail.uri?authorId=24824178200" target="_blank"><div class="p-avatar">Sc</div><div><div class="p-label">Scopus</div><div class="p-hint">Author ID: 24824178200</div></div></a>
-      <a class="p-card" href="https://www.webofscience.com/wos/author/record/32966" target="_blank"><div class="p-avatar">WS</div><div><div class="p-label">Web of Science</div><div class="p-hint">Researcher Record</div></div></a>
-      <a class="p-card" href="http://linkedin.com/in/chickerursr" target="_blank"><div class="p-avatar">in</div><div><div class="p-label">LinkedIn</div><div class="p-hint">Professional Network</div></div></a>
-      <a class="p-card" href="https://twitter.com/chickerursr" target="_blank"><div class="p-avatar">𝕏</div><div><div class="p-label">Twitter / X</div><div class="p-hint">@chickerursr</div></div></a>
-      <a class="p-card" href="https://www.techxcelerateinnovations.com" target="_blank"><div class="p-avatar">TX</div><div><div class="p-label">TechXcelerate Innovations</div><div class="p-hint">Startup · AI Products</div></div></a>
-      <a class="p-card" href="https://www.sih.gov.in" target="_blank"><div class="p-avatar">SIH</div><div><div class="p-label">Smart India Hackathon</div><div class="p-hint">Center Head 2017–2023</div></div></a>
+      <a class="p-card" href="https://scholar.google.co.in/citations?user=Obwc7esAAAAJ&hl=en" target="_blank"><div class="p-avatar" style="--b:#4285F4;">GS</div><div><div class="p-label">Google Scholar</div><div class="p-hint">Citations &amp; h-index</div></div></a>
+      <a class="p-card" href="https://www.scopus.com/authid/detail.uri?authorId=24824178200" target="_blank"><div class="p-avatar" style="--b:#E9711C;">Sc</div><div><div class="p-label">Scopus</div><div class="p-hint">Author ID: 24824178200</div></div></a>
+      <a class="p-card" href="https://www.webofscience.com/wos/author/record/32966" target="_blank"><div class="p-avatar" style="--b:#5E33BF;">WoS</div><div><div class="p-label">Web of Science</div><div class="p-hint">Researcher Record</div></div></a>
+      <a class="p-card" href="http://linkedin.com/in/chickerursr" target="_blank"><div class="p-avatar" style="--b:#0A66C2;">in</div><div><div class="p-label">LinkedIn</div><div class="p-hint">Professional Network</div></div></a>
+      <a class="p-card" href="https://twitter.com/chickerursr" target="_blank"><div class="p-avatar" style="--b:#111111;">𝕏</div><div><div class="p-label">Twitter / X</div><div class="p-hint">@chickerursr</div></div></a>
+      <a class="p-card" href="https://www.techxcelerateinnovations.com" target="_blank"><div class="p-avatar" style="--b:#B07D2B;">TX</div><div><div class="p-label">TechXcelerate Innovations</div><div class="p-hint">Startup · AI Products</div></div></a>
+      <a class="p-card" href="https://www.sih.gov.in" target="_blank"><div class="p-avatar" style="--b:#E8572A;">SIH</div><div><div class="p-label">Smart India Hackathon</div><div class="p-hint">Center Head 2017–2023</div></div></a>
     </div>
   </div>
 </section>
